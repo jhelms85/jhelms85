@@ -1,0 +1,56 @@
+body {
+    background-color: black;
+    color: ghostwhite;
+}
+
+.body-title {
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+.body-header {
+    color: white;
+    text-align: center;
+    font-family: Arial;
+}
+
+.body-footer {
+    color:rgb(178, 202, 194);
+    text-align: center;
+    font-family: Arial;
+}
+
+.introduction-body {
+    text-align: center;
+}
+
+a:link {
+    color:aquamarine;
+}
+
+a:visited {
+    color:darkgreen;
+}
+
+a:hover {
+    color:greenyellow;
+}
+
+div.introduction-info {
+    text-align: center;
+}
+
+ul.intro-list {
+    display: inline-block;
+    text-align: left;
+}
+
+.contract-body {
+    text-align: center;
+}
+
+
+
+
