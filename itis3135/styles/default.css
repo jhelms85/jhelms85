@@ -60,12 +60,12 @@ ul.intro-list {
     text-align: left;
 }
 
-.simpletable {
+table {
     margin-left: auto;
     margin-right: auto;
 }
 
-.simpletable tr td {
+tr td {
     border: 1px solid white;
     border-collapse: collapse;
 }
