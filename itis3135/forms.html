@@ -26,40 +26,41 @@
         <div class="medspacer"></div>
         <h2 class="bodytitle">Create an Account</h2>
         <div class="form">
-            <form class="userform">
-                <form>
-                    <fieldset class="formradio">
-                        <label for="accounttype">Customer Type:</label>
-                         <div>
-                          <input type="radio" id="business" name="accounttype" checked/>
-                          <label for="business">Business</label>
-                          <input type="radio" id="personal" name="accounttype" />
-                          <label for="personal">Personal</label>
-                        </div>
-                    </fieldset>
-                    <div class="smallspacer"></div>
-                    <label for="firstname">First name:</label><br>
-                    <input type="text" id="firstname" name="firstname" required><br>
-                    <label for="lastname">Last name:</label><br>
-                    <input type="text" id="lastname" name="lastname" required /><br>
-                    <label for="phonenumber">Phone Number:</label><br>
-                    <input type="text" id="phonenumber" name="phonenumber" placeholder="123-456-7890">
-                    <label for="email">Email:</label><br>
-                    <input type="text" id="email" name="email" placeholder="user@address.com" required /><br>
-                    <div class="smallspacer"></div>
-                    <fieldset class="formcheckbox">
-                        <label for="emailsub">Subscribe to alerts:</label>
-                         <div>
-                          <input type="checkbox" id="emailsub" name="emailsub" checked />
-                          <label for="emailsub">Subscribe to email updates</label>
-                        </div>
+            <form class="userform" action="#">
+                <fieldset class="formradio">
+                    <label for="accounttype">Customer Type:</label>
+                    <div>
+                        <input type="radio" id="business" name="accounttype" checked/>
+                        <label for="business">Business</label>
+                        <input type="radio" id="personal" name="accounttype" />
+                        <label for="personal">Personal</label>
+                    </div>
+                </fieldset>
+                <div class="smallspacer"></div>
+                <label for="firstname">First name:</label><br>
+                <input type="text" id="firstname" name="firstname" required><br>
+                <label for="lastname">Last name:</label><br>
+                <input type="text" id="lastname" name="lastname" required /><br>
+                <label for="phonenumber">Phone Number:</label><br>
+                <input type="tel" id="phonenumber" name="phonenumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" placeholder="user@address.com" required /><br>
+                <div class="smallspacer"></div>
+                <fieldset class="formcheckbox">
+                    <label for="emailsub">Subscribe to alerts:</label>
                         <div>
-                          <input type="checkbox" id="textsub" name="textsub" />
-                          <label for="textsub">Subscribe to text (SMS) updates</label>
-                        </div>
-                      </fieldset>
-                    <div class="smallspacer"></div>
-                </form> 
+                        <input type="checkbox" id="emailsub" name="emailsub" checked />
+                        <label for="emailsub">Subscribe to email updates</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="textsub" name="textsub" />
+                        <label for="textsub">Subscribe to text (SMS) updates</label>
+                    </div>
+                </fieldset>
+                <div class="smallspacer"></div>
+                <div class="formbuttons">
+                    <input type="submit" value="Submit"><input type="reset" value="Reset">
+                </div>
             </form>
         </div>
         <div class="medspacer"></div>
