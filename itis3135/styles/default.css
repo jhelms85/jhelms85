@@ -68,6 +68,7 @@ table {
 table, tr, td, th {
     border: 1px solid white;
     border-collapse: collapse;
+    padding: 5px;
 }
 
 .complextable tr:nth-child(odd) {
