@@ -51,21 +51,21 @@ ul.intro-list {
     text-align: center;
 }
 
-.tabularData div {
+.tabulardata div {
     text-align: center;
 }
 
-.tabularData {
+.tabulardata {
     display: inline-block;
     text-align: left;
 }
 
-.simpleTable {
+.simpletable {
     margin-left: auto;
     margin-right: auto;
 }
 
-.simpleTable tr td {
+.simpletable tr td {
     border: 1px solid white;
     border-collapse: collapse;
 }
