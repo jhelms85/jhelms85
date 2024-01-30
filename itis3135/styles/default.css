@@ -22,6 +22,10 @@ body {
     font-family: Arial;
 }
 
+.secondary-navigation {
+    padding-top: 10px;
+}
+
 .introduction-body {
     text-align: center;
 }
