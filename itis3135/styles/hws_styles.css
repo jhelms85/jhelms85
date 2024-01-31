@@ -5,9 +5,17 @@ body {
     margin: 0;
 }
 
+body a {
+    color: #00D9C0;
+}
+
+body a:hover {
+    color: #ff4365;
+}
+
 .body-header {
     background-color: black;
-    height: 80px;
+    height: 100px;
     width: auto;
     padding: 0;
     margin-bottom: 0;
@@ -15,8 +23,10 @@ body {
 
 .body-footer {
     background-color: black;
-    height: 80px;
+    height: 160px;
     width: auto;
+    margin: 0;
+    padding: 0;
 }
 
 .header-nav ul {
@@ -99,3 +109,18 @@ body {
 .list-of-services p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.contact {
+    padding: .1px;
+    text-align: center;
+    color: #ff4365;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.contact p {
+    color: white;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: center;
+}
+
