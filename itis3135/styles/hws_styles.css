@@ -22,11 +22,12 @@ body a:hover {
 }
 
 .body-footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
     background-color: black;
     height: 160px;
-    width: auto;
-    margin: 0;
-    padding: 0;
+    width: 100%;
 }
 
 .header-nav ul {
@@ -69,7 +70,7 @@ body a:hover {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin: 10px 10px;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 50px;
     padding-left: auto;
     padding-right: auto;
 }
@@ -119,15 +120,15 @@ body a:hover {
 }
 
 .contact {
-    padding: .1px;
     text-align: center;
     color: #ff4365;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .contact p {
+    margin-top: 0;
     color: white;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     display: flex;
     justify-content: center;
 }
