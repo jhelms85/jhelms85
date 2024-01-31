@@ -86,6 +86,11 @@ body a:hover {
     text-align: center;
 }
 
+.list-of-services h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 .list-of-services ul {
     list-style-type: none;
     display: inline-block;
