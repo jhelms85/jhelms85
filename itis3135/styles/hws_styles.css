@@ -1,0 +1,101 @@
+/* https://coolors.co/b7ad99-ff4365-030301-00d9c0-fffff3*/
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.body-header {
+    background-color: black;
+    height: 80px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 0;
+}
+
+.body-footer {
+    background-color: black;
+    height: 80px;
+    width: auto;
+}
+
+.header-nav ul {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0;
+    margin-top: 0;
+    list-style-type: none;
+    overflow: hidden;
+
+    border-top: .5px solid #514d44;
+    background-color: black;
+}
+
+.logo-divider {
+    display: flex;
+    color: white;
+}
+
+.logo-divider img {
+    padding-right: 25px;
+}
+
+.header-nav li {
+    float: left;
+}
+
+.header-nav li:hover {
+    background-color: #ff4365;
+}
+
+.active {
+    background-color: #514d44;
+}
+
+.header-nav a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 17px;
+    text-decoration: none;
+}
+
+.company-paragraph {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 10px 10px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: auto;
+    padding-right: auto;
+}
+
+.company-paragraph ul {
+    display: inline-block;
+    text-align: left;
+    list-style-type: square;
+    justify-content: center;
+}
+
+.list-of-services {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.list-of-services ul {
+    list-style-type: none;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+.list-of-services li {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 5px;
+    padding: 10px;
+    border: 2px solid #aaa7a0;
+    display: inline-block;
+    justify-content: space-around;
+    background-color: #e1ddd5;
+}
+
+.list-of-services p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
