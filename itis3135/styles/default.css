@@ -46,7 +46,7 @@ div.introduction-info {
     text-align: center;
 }
 
-ul.intro-list {
+ul.intro-list, ul.crap-principles {
     display: inline-block;
     text-align: left;
 }
