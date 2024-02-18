@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Helms's Jittery Horse || ITIS 3135 || First Scripts</title>
+    <link rel="stylesheet" href="styles/default.css">
+</head>
+<body>
+    <header class="body-header">
+        <div data-include="components/header.html"></div>
+    </header>
+
+    <main class="body-title">
+        <h2>First Scripts</h2>
+        <h3 id="date-time"></h3>
+        <script style="color: white;">
+            document.getElementById("date-time").innerHTML = "Date : " + Date();
+        </script>
+
+        <p>What is your name?</p>
+        <input id="name" placeholder="Name">
+        <p>How are you feeling?</p>
+        <input id="feeling" placeholder="ex. Fantastic!">
+
+        <button type="button" onclick="greetFunction()">Submit</button>
+
+        <p id="greeting"></p>
+
+        <script>
+            function greetFunction() {
+              const company = "Jittery Horse";
+              let name = document.getElementById("name").value;
+              let text = ("The " + company + " welcomes you, " + name + "! We're glad you are doing " + document.getElementById("feeling").value + "!");
+              document.getElementById("greeting").innerHTML = text;
+            }
+            </script>
+
+        <p>Please input a number between 1 and 10:</p>
+
+        <input id="numb">
+
+        <button type="number-game" onclick="gonFunction()">Submit</button>
+
+        <p id="demo"></p>
+
+        <script>
+        function gonFunction() {
+        // Get the value of the input field with id="numb"
+        let x = document.getElementById("numb").value;
+        // If x is Not a Number or less than one or greater than 10
+        let text;
+        if (isNaN(x) || x < 1 || x > 10) {
+            text = "Input not valid";
+        } else if (x == 1) {
+            text = "Henagon!";
+        } else if (x == 2) {
+            text = "Digon!";
+        } else if (x == 3) {
+            text = "Trigon!";
+        } else if (x == 4) {
+            text = "Tetragon!";
+        } else if (x == 5) {
+            text = "Pentagon!";
+        } else if (x == 6) {
+            text = "Hexagon!";
+        } else if (x == 7) {
+            text = "Heptagon!";
+        } else if (x == 8) {
+            text = "Octagon!";
+        } else if (x == 9) {
+            text = "Enneagon!";
+        } else if (x == 10) {
+            text = "Decagon!";
+        }
+        alert(text);
+        }
+        </script>
+
+    </main>
+
+    <footer class="body-footer">
+        <div data-include="components/footer.html"></div>
+    </footer>
+    <script>
+        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    </script>
+    <script src="scripts/HTMLInclude.min.js"></script>
+</body>
+</html>

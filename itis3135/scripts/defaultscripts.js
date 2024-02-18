@@ -1,0 +1,3 @@
+function scriptTest() {
+    alert("Hey");
+}
