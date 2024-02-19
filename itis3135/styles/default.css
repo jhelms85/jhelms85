@@ -166,5 +166,16 @@ input:invalid {
     border-color: red;
 }
 
+.scripts-page {
+    text-align: center;
+}
+
+.centered-container {
+    margin: 30px auto;
+    width: 300px;
+    border: 2px solid aquamarine;
+    padding: 10px;
+}
+
 
 

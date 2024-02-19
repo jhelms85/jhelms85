@@ -5,77 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jared Helms's Jittery Horse || ITIS 3135 || First Scripts</title>
     <link rel="stylesheet" href="styles/default.css">
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 <body>
     <header class="body-header">
         <div data-include="components/header.html"></div>
     </header>
 
-    <main class="body-title">
+    <main class="scripts-page">
         <h2>First Scripts</h2>
         <h3 id="date-time"></h3>
         <script style="color: white;">
             document.getElementById("date-time").innerHTML = "Date : " + Date();
         </script>
+        <div>
+            <p>What is your name?</p>
+            <input id="name" placeholder="Name">
+            <p>How are you feeling?</p>
+            <input id="feeling" placeholder="ex. Fantastic!">
 
-        <p>What is your name?</p>
-        <input id="name" placeholder="Name">
-        <p>How are you feeling?</p>
-        <input id="feeling" placeholder="ex. Fantastic!">
+            <button type="button" onclick="greetFunction()">Submit</button>
 
-        <button type="button" onclick="greetFunction()">Submit</button>
+            <p id="greeting"></p>
+        </div>
+        <div>
+            <p>Please input a number between 1 and 10:</p>
 
-        <p id="greeting"></p>
+            <input id="numb">
 
-        <script>
-            function greetFunction() {
-              const company = "Jittery Horse";
-              let name = document.getElementById("name").value;
-              let text = ("The " + company + " welcomes you, " + name + "! We're glad you are doing " + document.getElementById("feeling").value + "!");
-              document.getElementById("greeting").innerHTML = text;
-            }
-            </script>
+            <button type="number-game" onclick="gonFunction()">Submit</button>
+        </div>
+        <div class="centered-container">
+            <p>Press the button below to generate a random horse name!</p>
+            <button type="name-generator" onclick="generateHorseName()">Generate</button>
 
-        <p>Please input a number between 1 and 10:</p>
+            <p id="nameGenText"></p>
+        </div>
+        <div class="centered-container">
+            <h3>Medication Dosage Calculator</h3>
+            <p>Enter horse's weight and press calculate button to get recommended dosage.</p>
+            <input id="horseWeight">
+            <button onclick="calculateDosage()">Calculate</button>
+            <p id="dosageText"></p>
+        </div>
+        <div class="centered-container">
+            <h3>Medication Price Calculator</h3>
+            <p>Enter horse's weight and press price button to get the monthly price.</p>
+            <input id="horseWeightPrice">
+            <button onclick="calculatePrice()">Price</button>
+            <p id="priceText"></p>
 
-        <input id="numb">
-
-        <button type="number-game" onclick="gonFunction()">Submit</button>
-
-        <p id="demo"></p>
-
-        <script>
-        function gonFunction() {
-        // Get the value of the input field with id="numb"
-        let x = document.getElementById("numb").value;
-        // If x is Not a Number or less than one or greater than 10
-        let text;
-        if (isNaN(x) || x < 1 || x > 10) {
-            text = "Input not valid";
-        } else if (x == 1) {
-            text = "Henagon!";
-        } else if (x == 2) {
-            text = "Digon!";
-        } else if (x == 3) {
-            text = "Trigon!";
-        } else if (x == 4) {
-            text = "Tetragon!";
-        } else if (x == 5) {
-            text = "Pentagon!";
-        } else if (x == 6) {
-            text = "Hexagon!";
-        } else if (x == 7) {
-            text = "Heptagon!";
-        } else if (x == 8) {
-            text = "Octagon!";
-        } else if (x == 9) {
-            text = "Enneagon!";
-        } else if (x == 10) {
-            text = "Decagon!";
-        }
-        alert(text);
-        }
-        </script>
+            <h3>Shipping Price</h3>
+            <p>Select destination:</p>
+            <button onclick="calculateShipping('US')">United States</button>
+            <button onclick="calculateShipping('International')">International</button>
+            <p id="shippingCostText"></p>
+        </div>
 
     </main>
 
@@ -87,5 +72,6 @@
             document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
     </script>
     <script src="scripts/HTMLInclude.min.js"></script>
+
 </body>
 </html>
