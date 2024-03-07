@@ -177,5 +177,28 @@ input:invalid {
     padding: 10px;
 }
 
+.calculator-body {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-color: darkgray;
+    height: auto;
+    width: 150px;
+}
+
+.display {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+.calc-button {
+    padding: 10px;
+}
+
 
 

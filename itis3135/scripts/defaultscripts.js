@@ -1,7 +1,3 @@
-function scriptTest() {
-    alert("Hey");
-}
-
 function greetFunction() {
     const company = "Jittery Horse";
     let name = document.getElementById("name").value;
