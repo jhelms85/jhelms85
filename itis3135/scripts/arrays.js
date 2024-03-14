@@ -50,27 +50,11 @@ const addSalary = () => {
 }
 
 const modifySalary = () => {
-    const salarySelector = document.querySelector("salary-select");
-    salarySelector.innerHTML = "";
-    const dropdownBox = document.createElement("selector");
+    const dropdownBox = document.getElementById("employee-dropdown");
+    const employeeIndex = dropdown.selectedIndex;
 
-    person.forEach((employee, i) => {
-        const selection = document.createElement("selection");
-        option.text = `${employee.firstName} ${employee.lastName}`;
-        option.value = i;
-        dropdownBox.appendChild(option);
-    });
-
-    const newSalary = document.createElement("input");
-    newSalary.type = "number";
-    newSalary.placeholder = "Input new salary";
-
-    const newSalarySubmitBtn = document.createElement("button");
-    newSalarySubmitBtn.textContent = "Submit";
-
-    newSalarySubmitBtn.addEventListener('click', function(event) {
-        const selection = dropdownBox.options[dropdownBox.selection].value;
-        const updatedSalary = parseFloat(newSalary.value);
+    if (employeeIndex !== -1) {
+        const updatedSalary = parseFloat(document.getElementById("s-input").value);
 
         if (!isNaN(updatedSalary)) {
             salaries[selection] = updatedSalary;
@@ -81,12 +65,10 @@ const modifySalary = () => {
             const divMessage = document.querySelector(".array-pass-fail-message");
             divMessage.innerHTML = "Update was unsuccessful.";
         }
-    });
-
-    salarySelector.appendChild(dropdownBox);
-    salarySelector.appendChild(newSalary);
-    salarySelector.appendChild(newSalarySubmitBtn);
-
+    } else {
+        const divMessage = document.querySelector(".array-pass-fail-message");
+        divMessage.innerHTML = "Please select an employee."
+    }
 }
 
 const displayResults = () => {
