@@ -57,19 +57,20 @@ const modifySalary = () => {
         const updatedSalary = parseFloat(document.getElementById("s-input").value);
 
         if (!isNaN(updatedSalary)) {
-            salaries[selection] = updatedSalary;
-            newSalary.value = "";
+            salaries[employeeIndex] = updatedSalary;
+            document.getElementById("s-input").value = "";
             const divMessage = document.querySelector(".array-pass-fail-message");
-            divMessage.innerHTML = "Salary has been updated!"
+            divMessage.innerHTML = "Salary has been updated!";
         } else {
             const divMessage = document.querySelector(".array-pass-fail-message");
-            divMessage.innerHTML = "Update was unsuccessful.";
+            divMessage.innerHTML = "Update was unsuccessful. Please enter a valid salary.";
         }
     } else {
         const divMessage = document.querySelector(".array-pass-fail-message");
-        divMessage.innerHTML = "Please select an employee."
+        divMessage.innerHTML = "Please select an employee.";
     }
 }
+
 
 const displayResults = () => {
     alert("Test disp rslts");
