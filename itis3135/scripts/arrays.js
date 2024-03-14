@@ -23,11 +23,11 @@ displaySalaryButton.addEventListener('click', function(event) {
 });
 
 const addSalary = () => {
-    const fName = document.getElementById("f-name-input").value = "";
-    const lName = document.getElementById("l-name-input").value = "";
+    const fName = document.getElementById("f-name-input").value;
+    const lName = document.getElementById("l-name-input").value;
     const salary = parseFloat(document.getElementById("s-input").value);
 
-    if (fName && lName && !isNaN(salary)) {
+    if (fName.trim() != '' && lName.trim() != '' && !isNaN(salary)) {
         person.push({ firstName: fName, lastName: lName});
         salaries.push(salary);
 
@@ -39,7 +39,7 @@ const addSalary = () => {
         divMessage.innerHTML = "Person and Salary added!"
     } else {
         const divMessage = document.querySelector(".array-pass-fail-message");
-        divMessage.innerHTML = "Add was unsucessful."
+        divMessage.innerHTML = "Add was unsucessful.";
     }
 }
 
