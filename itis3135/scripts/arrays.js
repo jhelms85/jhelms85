@@ -26,6 +26,15 @@ displayResultsButton.addEventListener('click', function(event) {
     displayResults();
 });
 
+document.getElementById("display-results-btn").addEventListener('click', function(event) {
+    const resultsSelectDiv = document.querySelector(".results");
+    resultsSelectDiv.style.display = "block";
+});
+
+document.getElementById("remove-results-btn").addEventListener('click', function(event) {
+    clearResults();
+});
+
 displaySalaryButton.addEventListener('click', function(event) {
     displaySalary();
 });
@@ -62,6 +71,9 @@ const addSalary = () => {
 }
 
 const modifySalary = () => {
+    const divMessage = document.querySelector(".array-pass-fail-message");
+    divMessage.innerHTML = "";
+
     const dropdownBox = document.getElementById("employee-dropdown");
     const employeeIndex = dropdownBox.selectedIndex;
     const newSalaryInput = document.getElementById("new-salary-input");
@@ -70,20 +82,52 @@ const modifySalary = () => {
     if (employeeIndex !== -1 && !isNaN(updatedSalary)) {
         salaries[employeeIndex] = updatedSalary;
         newSalaryInput.value = "";
-        const divMessage = document.querySelector(".array-pass-fail-message");
         divMessage.innerHTML = "Salary has been updated!";
 
         const salarySelectDiv = document.querySelector(".salary-select");
         salarySelectDiv.style.display = "none";
 
     } else {
-        const divMessage = document.querySelector(".array-pass-fail-message");
         divMessage.innerHTML = "Update was unsuccessful. Please select an employee and enter a valid salary.";
     }
 }
 
 const displayResults = () => {
-    alert("Test disp rslts");
+    const resultsHeader = document.getElementById("results-header");
+    const resultsHighest = document.getElementById("results-highest");
+    const resultsAverage = document.getElementById("results-average");
+    const resultsDiv = document.querySelector(".results");
+    const divMessage = document.querySelector(".array-pass-fail-message");
+
+    divMessage.innerHTML = "";
+
+    if (salaries.length === 0) {
+        resultsHeader.textContent = "No salaries have been added. Please add salaries using the Add Salary button above.";
+        return;
+    }
+
+    const largestSalary = Math.max(...salaries);
+    const total = salaries.reduce((acc, curr) => acc + curr, 0);
+    const avgSalary = total / salaries.length;
+
+    resultsHeader.textContent = "Results";
+    resultsHighest.textContent = `Highest Salary: $${largestSalary.toFixed(2)}`;
+    resultsAverage.textContent = `Average Salary: $${avgSalary.toFixed(2)}`;
+    resultsDiv.style.display = "block";
+
+}
+
+const clearResults = () => {
+    const resultsDiv = document.querySelector(".results");
+    resultsDiv.style.display = "none";
+
+    const resultsHeader = document.getElementById("results-header");
+    const resultsHighest = document.getElementById("results-highest");
+    const resultsAverage = document.getElementById("results-average");
+    resultsHeader.textContent = "";
+    resultsHighest.textContent = "";
+    resultsAverage.textContent = "";
+
 }
 
 const displaySalary = () => {
