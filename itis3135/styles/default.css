@@ -289,9 +289,11 @@ input:invalid {
 .btn {
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
-.input-entry {
+.input-entry, #new-salary-input {
     max-width: 300px;
     margin-left: auto;
     margin-right: auto;

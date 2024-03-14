@@ -1,16 +1,24 @@
 const person = [];
 const salaries = [];
 
-const addSalaryButton = document.getElementById("add-salary-btn");
-const modSalaryButton = document.getElementById("mod-salary-btn");
 const displayResultsButton = document.getElementById("display-results-btn");
 const displaySalaryButton = document.getElementById("display-salary-btn");
 
-addSalaryButton.addEventListener('click', function(event) {
+document.getElementById("mod-salary-btn").addEventListener('click', function() {
+    const salarySelectDiv = document.querySelector(".salary-select");
+    salarySelectDiv.style.display = "block";
+});
+
+document.getElementById("submit-salary-btn").addEventListener('click', function(event) {
     addSalary();
 });
 
-modSalaryButton.addEventListener('click', function(event) {
+document.getElementById("add-salary-btn").addEventListener('click', function() {
+    const salarySelectDiv = document.querySelector(".input-entry");
+    salarySelectDiv.style.display = "block";
+});
+
+document.getElementById("update-salary-btn").addEventListener('click', function(event) {
     modifySalary();
 });
 
@@ -43,6 +51,10 @@ const addSalary = () => {
 
         const divMessage = document.querySelector(".array-pass-fail-message");
         divMessage.innerHTML = "Person and Salary added!"
+
+        const salarySelectDiv = document.querySelector(".input-entry");
+        salarySelectDiv.style.display = "none";
+
     } else {
         const divMessage = document.querySelector(".array-pass-fail-message");
         divMessage.innerHTML = "Add was unsuccessful.";
@@ -52,25 +64,23 @@ const addSalary = () => {
 const modifySalary = () => {
     const dropdownBox = document.getElementById("employee-dropdown");
     const employeeIndex = dropdownBox.selectedIndex;
+    const newSalaryInput = document.getElementById("new-salary-input");
+    const updatedSalary = parseFloat(newSalaryInput.value);
 
-    if (employeeIndex !== -1) {
-        const updatedSalary = parseFloat(document.getElementById("s-input").value);
+    if (employeeIndex !== -1 && !isNaN(updatedSalary)) {
+        salaries[employeeIndex] = updatedSalary;
+        newSalaryInput.value = "";
+        const divMessage = document.querySelector(".array-pass-fail-message");
+        divMessage.innerHTML = "Salary has been updated!";
 
-        if (!isNaN(updatedSalary)) {
-            salaries[employeeIndex] = updatedSalary;
-            document.getElementById("s-input").value = "";
-            const divMessage = document.querySelector(".array-pass-fail-message");
-            divMessage.innerHTML = "Salary has been updated!";
-        } else {
-            const divMessage = document.querySelector(".array-pass-fail-message");
-            divMessage.innerHTML = "Update was unsuccessful. Please enter a valid salary.";
-        }
+        const salarySelectDiv = document.querySelector(".salary-select");
+        salarySelectDiv.style.display = "none";
+
     } else {
         const divMessage = document.querySelector(".array-pass-fail-message");
-        divMessage.innerHTML = "Please select an employee.";
+        divMessage.innerHTML = "Update was unsuccessful. Please select an employee and enter a valid salary.";
     }
 }
-
 
 const displayResults = () => {
     alert("Test disp rslts");

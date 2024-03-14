@@ -19,16 +19,22 @@
             <button id="display-results-btn">Display Results</button>
             <button id="display-salary-btn">Display Salary</button>
         </div>
-        <div class="input-entry">
+        <div class="input-entry" style="display: none;">
             <input type="text" id="f-name-input" placeholder="First Name">
             <input type="text" id="l-name-input" placeholder="Last Name">
             <input type="number" id="s-input" placeholder="Salary: (ex. 120000)">
-        </div>
-        <div class="salary-select" style="display: none;">
-            <select id="employee-dropdown"></select>
-            <input type="number" id="new-salary-input" placeholder="New Salary">
             <button id="submit-salary-btn">Submit</button>
         </div>
+        <div class="salary-select" style="display: none;">
+            <div class="employee-dropdown-div">
+                <select id="employee-dropdown"></select>
+            </div>
+            <div class="salary-select-dropdown">
+                <input type="number" id="new-salary-input" placeholder="New Salary">
+                <button id="update-salary-btn">Submit</button>
+            </div>
+        </div>
+        
     </main>
     <footer class="body-footer">
         <div data-include="components/footer.html"></div>
