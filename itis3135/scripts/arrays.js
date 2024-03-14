@@ -44,7 +44,7 @@ const addSalary = () => {
 }
 
 const modifySalary = () => {
-    alert("Test mod sal");
+    const salarySelector = document.getElementById("salary-select").value;
 }
 
 const displayResults = () => {
