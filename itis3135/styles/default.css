@@ -299,3 +299,11 @@ input:invalid {
     margin-top: 0;
     margin-bottom: 10px;
 }
+
+.salary-select {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
