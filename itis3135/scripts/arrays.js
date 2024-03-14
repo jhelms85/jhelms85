@@ -31,7 +31,7 @@ const addSalary = () => {
         person.push({ firstName: fName, lastName: lName});
         salaries.push(salary);
 
-        const dropdownBox = document.getElementById("employee-list");
+        const dropdownBox = document.getElementById("employee-dropdown");
         const option = document.createElement("option");
         option.text = `${fName} ${lName}`;
         option.value = person.length - 1;
