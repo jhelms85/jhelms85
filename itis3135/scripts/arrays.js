@@ -51,7 +51,7 @@ const addSalary = () => {
 
 const modifySalary = () => {
     const dropdownBox = document.getElementById("employee-dropdown");
-    const employeeIndex = dropdown.selectedIndex;
+    const employeeIndex = dropdownBox.selectedIndex;
 
     if (employeeIndex !== -1) {
         const updatedSalary = parseFloat(document.getElementById("s-input").value);
