@@ -286,11 +286,21 @@ input:invalid {
     margin-top: 0;
 }
 
-.btn {
+.btn-group {
     margin-left: auto;
     margin-right: auto;
     margin-top: auto;
     margin-bottom: 20px;
+}
+
+.btn {
+    background-color: black;
+    color: white;
+    border: 2px solid aquamarine;
+    padding: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .input-entry, #new-salary-input {
