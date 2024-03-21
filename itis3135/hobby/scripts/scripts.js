@@ -10,9 +10,10 @@ const whenSection = document.getElementById("when");
 const tuningsSection = document.getElementById("tunings");
 const howSection = document.getElementById("how");
 const whySection = document.getElementById("why");
+const cssBtn = document.getElementById("no-css-btn");
 
 function showSection(section) {
-    section.style.display = "";
+    section.style.display = "block";
 }
 
 function hideSection(section) {
@@ -56,4 +57,9 @@ howLink.addEventListener("click", function() {
 whyLink.addEventListener("click", function() {
     hideAllSections();
     showSection(whySection);
+});
+
+cssBtn.addEventListener("click", function() {
+    const styleTag = document.querySelector("style");
+    styleTag.innerHTML = "";
 });
