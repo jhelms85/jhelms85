@@ -332,3 +332,9 @@ input:invalid {
     border-bottom: 1px solid darkcyan;
     outline: none;
 }
+
+.centered-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
