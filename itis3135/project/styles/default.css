@@ -1,0 +1,56 @@
+/* COLOR PALETTE
+    Dark Gray #545F66
+    Light Gray #829399
+    Mint Green #D0F4EA
+    Tea Green #E8FCC2
+    Pistachio #B1CC74
+*/
+
+body {
+    background-color: #829299;
+}
+
+/* PLANNING ONLY - REMOVE */
+.planning, .nav-bar-container a {
+    border: 3px solid orangered;
+}
+
+.nav-bar-container {
+    background-color: #D0F4EA;
+    padding: 0px;
+    margin-bottom: 2px;
+    border: 1px solid #829399;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+}
+
+.nav-bar-container nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar-container nav ul li {
+    display: inline-block;
+    margin-right: 25px;
+    padding: 15px;
+}
+
+.nav-bar-container a {
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.logo {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+    margin-right: 20px;
+}
