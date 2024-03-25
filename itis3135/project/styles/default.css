@@ -8,6 +8,8 @@
 
 body {
     background-color: #829299;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    
 }
 
 /* PLANNING ONLY - REMOVE */
@@ -16,31 +18,51 @@ body {
 }
 
 .nav-bar-container {
-    background-color: #D0F4EA;
+    background-color: #eff7f4;
     padding: 0px;
-    margin-bottom: 2px;
     border: 1px solid #829399;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
+    height: 70px;
     width: 100%;
     z-index: 999;
     display: flex;
     align-items: center;
 }
 
-.nav-bar-container nav ul {
+.logo img {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+.links {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    margin-right: auto;
 }
 
-.nav-bar-container nav ul li {
+.links li {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 5px;
     padding: 15px;
 }
+
+.no-css-btn {
+    border: none; 
+    background-color: orangered; 
+    color: white; 
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.no-css-btn:hover {
+    cursor: pointer; 
+}
+
 
 .nav-bar-container a {
     color: #000000;
@@ -48,9 +70,16 @@ body {
     text-decoration: none;
 }
 
-.logo {
-    height: 50px;
-    width: 50px;
-    margin-left: 10px;
-    margin-right: 20px;
+.main-content {
+    padding-top: 60px;
+    width: 100%;
+}
+
+.page-footer {
+    margin-top: 2px;
+}
+
+.validation-buttons, .copyright-tag {
+    text-align: center;
+    padding: 0px;
 }
