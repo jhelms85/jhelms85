@@ -13,8 +13,99 @@
 <body>
     <header class="page-header planning"><div data-include="components/header.html"></div></header>
     <main class="main-content">
-        <div class="planning">
-            <p>Overview Content Test</p>
+        <div class="overview planning side-by-side center-content">
+            <h1>Python Overview</h1>
+            <div class="content-box center-content python-preview planning" style="width: 1200px;">
+                <div class="side-by-side">
+                    <div class="what-python content-box">
+                        <h2>What is python?</h2>
+                        <p>Python is a programming language that is widely recognized and renoun for its simplicity and reliability.
+                            Don't let this fool you, while simplistic, Python is extremely functional. It is used in a variety of fields 
+                             including web-development, data science/analysis, artificial intelligence, and so much more. 
+                        </p>
+                    </div>
+                    <div class="why-python content-box">
+                        <h2>Why learn Python?</h2>
+                        <p>Python was designed to be quite readable and has a relatively user friendly syntax. It reads very similar to 
+                            the english language. Because of this, it allows for more robust commands to be executed in fewer lines of code
+                             than other languages.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="container planning">
+                <div class="python-preview centered-div planning">
+                    <h2>Lets take a quick look at some Python!</h2>
+                    <div class="code-container center-content">
+                        <code class="code-block planning">
+                            <span style="color: white;">def</span> <span style="color: rgb(255, 0, 255);">hello_world</span><span style="color: rgb(115, 255, 0);">():</span><br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"Hello, World!"</span>)
+                        </code>
+                        <p style="margin-left: 25px;">Lets break this down. It may look weird at first but we will take it step by step!</p>
+                    </div>
+                    <div class="code-breakdown planning">
+                        <p class="def-breakdown" id="def-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">def</span>this is a keyword in python used to define a function.</p>
+                        <p class="hello-breakdown" id="hello-breakdown" style="display: none;"><span style="background-color: black; color: rgb(255, 0, 255); padding: 15px;">hello_world</span>this text here is used to define the function's name.</p>
+                        <p class="parenth-breakdown" id="parenth-breakdown" style="display: none;"><span style="width: 65px; background-color: black; color: rgb(115, 255, 0); padding: 15px;">( ) :</span>The parenthesis (empty in this example) are used to set parameters for the function, and the colon is to define where the function's executable code begins.</p>
+                        <p class="print-breakdown" id="print-breakdown" style="display: none;"><span style="background-color: black; color: rgb(0, 204, 255); padding: 15px;">print</span>this is a built in Python function that is used to display information or content to the screen.</p>
+                        <p class="output-breakdown" id="output-breakdown" style="display: none;"><span style="width: 220px; background-color: black; color: red; padding: 15px;">("Hello, World!")</span>Hello, World! would be the exact text that is displayed to the screen on execution of the function.</p>
+                    </div>
+                    <div class="code-breakdown-btn">
+                        <!-- Possibly make prev btn a reset btn -->
+                        <button class="previous-btn" id="previous-btn">Previous</button>
+                        <button class="next-btn" id="next-btn">Next</button>
+                    </div>
+                    <div>
+                        <p class="center-content planning">Don't worry if some of this does not make sense to you right now, we will most certainly go into detail throughout to develop a solid understanding of all of these sections of code!</p>
+                        <p class="center-content planning" style="font-size: 0.7rem;">Quick note: The colors on the text are for visual purposes, your programming application will most likely do this, but the colors will most certainly differ.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="remember-container  centered-div planning" style="width: 900px">
+                <h2 style="color: #64c0a6">Remember:</h2>
+                <p>The goal here is to get a basic overview and begin a programming <i>journey</i>, not become an expert immediately.
+                    You will experience ups and downs as does every programmer that has ever existed, and will exist. It's only when mistakes are 
+                     made, that you really begin learning. There are many approaches to solving a problem and going through problems will show you 
+                     them will really show you that there is no "one size fits all" answer.
+                </p>
+            </div>
+        </div>
+        <div class="center-content content-box planning">
+            <div>
+                <p>Click the button below to get started with some Python basics!</p>
+                <button class="code-breakdown-btn next-btn" onclick="basics.html">Get Started</button>
+            </div>
+        </div>
+        <div class="side-by-side planning">
+            <div class="content-box planning" style="width: 300px;">
+                <p>ADD CONTENT</p>
+            </div>
+            <div class="content-box planning" style="width: 850px;">
+                <h3>Course Objectives:</h3>
+                <p>By the end of this course, you will have a solid foundation to begin your Python programming journey. You will learn 
+                    a multitude of things that will get you set off on the right foot to begin creating programs and solving problems using
+                    this powerful tool!
+                </p>
+                <ul>
+                    <li>1. Overview of Python (you are here).</li>
+                    <li>2. Basic Python syntax.</li>
+                    <li>3. Beginner Python concepts.</li>
+                    <li>4. Some slightly more advanced concepts and tips.</li>
+                    <li>5. An overview of documentation, comments, and where to find Python documentation.</li>
+                    <li>6. A test/quiz section to review and practice your programming skills.</li>
+                </ul>
+            </div>
+            <div class="content-box planning" style="width: 300px;">
+                <h3>Additional Learning Resources:</h3>
+                <ul>
+                    <li><a href="https://www.python.org/">Python.org</a></li>
+                    <li><a href="https://www.w3schools.com/python/default.asp">W3 Schools</a></li>
+                    <li><a href="https://www.geeksforgeeks.org/python-programming-language/">GeeksForGeeks</a></li>
+                    <li><a href="https://www.codecademy.com/catalog/language/python">CodeAcademy</a></li>
+                    <li><a href="https://www.freecodecamp.org/news/tag/python/">freeCodeCamp</a></li>
+                </ul>
+                <p>All of these websites are free or have free learning tools and content to bolster your knowledge!</p>
+            </div>
         </div>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
