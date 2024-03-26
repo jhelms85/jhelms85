@@ -230,3 +230,9 @@ body a:hover {
     padding: 10px;
     border: 1px solid #829399;
 }
+
+.wide-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
