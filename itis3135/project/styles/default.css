@@ -19,11 +19,22 @@ body {
 }
 
 body h1 {
+    text-align: center;
     color: #a9f7e1;
 }
 
+body h2 {
+    text-align: center;
+    color: #639486;
+}
+
+body h3 {
+    text-align: center;
+     color: #64c0a6;
+}
+
 body a {
-    color: #64c0a6;
+    color: #00d169;
     text-decoration: none;
 }
 
@@ -41,6 +52,12 @@ body a:hover {
     margin-left: 2px;
     margin-right: 2px;
 }
+
+.section-planning {
+    border: 3px solid rgb(0, 183, 255);
+}
+
+/* REMOVE ABOVE */
 
 .nav-bar-container {
     background-color: #eff7f4;
@@ -129,11 +146,6 @@ body a:hover {
     border: 3px solid #464c4e
 }
 
-.overview-container h1 {
-    text-align: center;
-    color: #007e36;
-}
-
 .side-by-side {
     display: flex;
     justify-content: center;
@@ -156,6 +168,8 @@ body a:hover {
     list-style-type: none;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .center-content {

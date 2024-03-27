@@ -11,95 +11,128 @@
     <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
+    <!-- Each section will be hidden and show when a button is pressed with JS -->
     <header class="page-header planning"><div data-include="components/header.html"></div></header>
     <main class="main-content">
-        <div class="center-content side-by-side planning">
-            <h1>Python Syntax</h1>
-            <p>In this section we will begin to dive into Python syntax. I'll assume you have some questions.</p>
-        </div>
-        <div class="side-by-side planning">
-            <div class="content-box planning">
-                <h3>What on Earth is syntax?</h3>
+        <!-- SECTION -->
+        <section class="syntax-overview section-planning" id="syntax-overview" style="display: block;">
+            <div class="center-content side-by-side planning">
+                <h1>Python Syntax</h1>
+                <p>In this section we will begin to dive into Python syntax. I'll assume you have some questions.</p>
+            </div>
+            <div class="side-by-side planning">
+                <div class="content-box planning">
+                    <h3>What on Earth is syntax?</h3>
+                    <p>ADD CONTENT</p>
+                </div>
+                <div class="content-box planning">
+                    <h3>Okay, so?</h3>
+                    <p>ADD CONTENT</p>
+                </div>
+            </div>
+            <div class="content-box center-content side-by-side planning">
+                <h3>What does this look like?</h3>
+                <p>As we saw on the overview page, Python has a relatively simple syntax when compared to other programming languages.
+                    Because of this, it often is the first language to be taught. Here is the example we looked at:
+                </p>
+            </div>
+            <div class="code-container center-content">
+                <code class="code-block planning">
+                    <span style="color: white;">def</span> <span style="color: rgb(255, 0, 255);">hello_world</span><span style="color: rgb(115, 255, 0);">():</span><br>
+                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"Hello, World!"</span>)
+                </code>
+            </div>
+            <div class="center-content">
+                <p>We already broke this down previously, but here is a refresher in case you need it.</p>
+                <div>
+                    <div class="code-breakdown planning">
+                        <p class="def-breakdown"><span style="background-color: black; color: white; padding: 15px;">def</span>this is a keyword in python used to define a function.</p>
+                        <p class="hello-breakdown"><span style="background-color: black; color: rgb(255, 0, 255); padding: 15px;">hello_world</span>this text here is used to define the function's name.</p>
+                        <p class="parenth-breakdown" ><span style="width: 65px; background-color: black; color: rgb(115, 255, 0); padding: 15px;">( ) :</span>The parenthesis (empty in this example) are used to set parameters for the function, and the colon is to define where the function's executable code begins.</p>
+                        <p class="print-breakdown"><span style="background-color: black; color: rgb(0, 204, 255); padding: 15px;">print</span>this is a built in Python function that is used to display information or content to the screen.</p>
+                        <p class="output-breakdown"><span style="width: 220px; background-color: black; color: red; padding: 15px;">("Hello, World!")</span>Hello, World! would be the exact text that is displayed to the screen on execution of the function.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION -->
+        <section class="indentation-container section-planning" id="indentation-container" style="display: none;">
+            <div class="indentation-container planning">
+                <div class="wide-box planning">
+                    <h3>Indentation</h3>
+                    <p>ADD CONTENT</p>
+                </div>
+                <div class="side-by-side planning">
+                    <div class="content-box planning">
+                        <h3>What is indentation?</h3>
+                        <p>ADD CONTENT</p>
+                    </div>
+                    <div class="content-box planning" style="display: flex; flex-direction: column;">
+                        <h3>Example:</h3>
+                        <!--Fix these to line up somehow-->
+                        <div class="center-content planning">
+                            <div class="code-container planning">
+                                <p style="margin-left: 15px; margin-right: 35px;">Correct:</p>
+                                <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid limegreen;">
+                                    <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
+                                </code>
+                            </div>
+                            <div class="code-container planning" style="padding-top: 25px;">
+                                <p style="margin-left: 15px; margin-right: 35px;">Incorrect:</p>
+                                <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid red;">
+                                    <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
+                                </code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wide-box planning">
+                    <p>In the above example, the first statement is correct as it uses indentation properly before the print statement. 
+                        The amount of spaces can differ and as the programmer you can decide, the common amount of spaces is four, and most programmers use this as the standard. In most IDE's pressing tab will be set to four spaces, 
+                         and many auto indent for you based on context. So in other words, after you type your first line:
+                    </p>
+                    <p style="color: aquamarine;">
+                        if 5 > 2:
+                    </p>
+                    <p>
+                        and press the Enter key,
+                    </p>
+                    <p>
+                        The IDE will drop down a line and add an indent and you can begin typing the print statement.
+                    </p>
+                    <p>
+                        if 5 > 2:
+                    </p>
+                    <p style="color: aquamarine;">
+                        ----print("True!")
+                    </p>
+                    <div class="center-content">
+                        <p style="font-size: 0.8rem;">Note: In this, the dashes count as the spaces that will auto fill, they will not be dashes in the IDE.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="wide-box center-content planning">
+                <h3>More examples:</h3>
+            </div>
+            <div class="planning">
                 <p>ADD CONTENT</p>
             </div>
-            <div class="content-box planning">
-                <h3>Okay, so?</h3>
+            <div class="planning">
                 <p>ADD CONTENT</p>
             </div>
-        </div>
-        <div class="content-box center-content side-by-side planning">
-            <h3>What does this look like?</h3>
-            <p>As we saw on the overview page, Python has a relatively simple syntax when compared to other programming languages.
-                Because of this, it often is the first language to be taught. Here is the example we looked at:
-            </p>
-        </div>
-        <div class="code-container center-content">
-            <code class="code-block planning">
-                <span style="color: white;">def</span> <span style="color: rgb(255, 0, 255);">hello_world</span><span style="color: rgb(115, 255, 0);">():</span><br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"Hello, World!"</span>)
-            </code>
-        </div>
-        <div class="center-content">
-            <p>We already broke this down previously, but here is a refresher in case you need it.</p>
+        </section>
+        <!-- SECTION -->
+        <section class="section-planning" style="display: none;">
             <div>
-                <div class="code-breakdown planning">
-                    <p class="def-breakdown"><span style="background-color: black; color: white; padding: 15px;">def</span>this is a keyword in python used to define a function.</p>
-                    <p class="hello-breakdown"><span style="background-color: black; color: rgb(255, 0, 255); padding: 15px;">hello_world</span>this text here is used to define the function's name.</p>
-                    <p class="parenth-breakdown" ><span style="width: 65px; background-color: black; color: rgb(115, 255, 0); padding: 15px;">( ) :</span>The parenthesis (empty in this example) are used to set parameters for the function, and the colon is to define where the function's executable code begins.</p>
-                    <p class="print-breakdown"><span style="background-color: black; color: rgb(0, 204, 255); padding: 15px;">print</span>this is a built in Python function that is used to display information or content to the screen.</p>
-                    <p class="output-breakdown"><span style="width: 220px; background-color: black; color: red; padding: 15px;">("Hello, World!")</span>Hello, World! would be the exact text that is displayed to the screen on execution of the function.</p>
-                </div>
-            </div>
-        </div>
-        <div class="wide-box planning">
-            <h3 style="text-align: center; color: #64c0a6;">Indentation</h3>
-            <p>ADD CONTENT</p>
-        </div>
-        <div class="side-by-side planning">
-            <div class="content-box planning">
-                <h3>What is indentation?</h3>
                 <p>ADD CONTENT</p>
             </div>
-            <div class="content-box planning" style="display: flex; flex-direction: column;">
-                <h3>Example:</h3>
-                <div class="center-content planning">
-                    <div class="code-container planning">
-                        <p style="margin-left: 15px; margin-right: 35px;">Correct:</p>
-                        <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid limegreen;">
-                            <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
-                        </code>
-                    </div>
-                    <div class="code-container planning" style="padding-top: 25px;">
-                        <p style="margin-left: 15px; margin-right: 35px;">Incorrect:</p>
-                        <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid limegreen;">
-                            <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
-                                &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
-                        </code>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="wide-box planning">
-            <p>In the above example, the first statement is correct as it uses indentation properly before the print statement. 
-                The amount of spaces can differ and as the programmer you can decide, the common amount of spaces is four, and most programmers use this as the standard. In most IDE's pressing tab will be set to four spaces, 
-                 and many auto indent for you based on context. So in other words, after you type your first line:
-            </p>
-            <p style="color: aquamarine;">
-                if 5 > 2:
-            </p>
-            <p>
-                and press the Enter key,
-            </p>
-            <p>
-                The IDE will drop down a line and add an indent and you can begin typing the print statement.
-            </p>
-            <p>
-                if 5 > 2:
-            </p>
-            <p style="color: aquamarine;">
-                &nbsp;&nbsp;&nbsp;&nbsp;print("True!")
-            </p>
+        </section>
+        <!-- Add more functionality than just next -->
+        <!-- Possibly a nav bar to the different sections -->
+        <div class="center-content">
+            <button class="next-btn">Next</button>
         </div>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
