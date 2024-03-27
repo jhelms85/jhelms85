@@ -13,7 +13,126 @@
 <body>
     <header class="page-header planning"><div data-include="components/header.html"></div></header>
     <main class="main-content">
-        
+        <h1>Python Basics</h1>
+        <section class="data-types center-content section-planning" id="data-types">
+            <div class="wide-box planning">
+                <h2>Data Types</h2>
+                <p>Now that we've looked into some syntax, the next thing we will dive into is some basics. The first thing we will cover here will be Python data types.</p>
+                <p>There are numerous built in data types, let's take a look at them.</p>
+                <div class="wide-box side-by-side planning">
+                    <div class="center-content planning">
+                        <table>
+                            <caption>Basic Data Types</caption>
+                            <tr>
+                                <th>Type:</th>
+                                <th>Syntax:</th>
+                            </tr>
+                            <tr>
+                                <td>Text</td>
+                                <td>str</td>
+                            </tr>
+                            <tr>
+                                <td>Number</td>
+                                <td>int, float, complex</td>
+                            </tr>
+                            <tr>
+                                <td>Boolean</td>
+                                <td>bool</td>
+                            </tr>
+                            <tr>
+                                <td>Sequence</td>
+                                <td>list, tuple, range</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="center-content planning">
+                        <table>
+                            <caption>Less Common Data Types</caption>
+                            <tr>
+                                <th>Type:</th>
+                                <th>Syntax:</th>
+                            </tr>
+                            <tr>
+                                <td>Binary</td>
+                                <td>bytes, bytearray, memoryview</td>
+                            </tr>
+                            <tr>
+                                <td>Set</td>
+                                <td>set, frozenset</td>
+                            </tr>
+                            <tr>
+                                <td>None</td>
+                                <td>NoneType</td>
+                            </tr>
+                            <tr>
+                                <td>Mapping</td>
+                                <td>dict</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="wide-box">
+                <p>Again, lets break it down.</p>
+                <!-- Fix formatting, centering, all that -->
+                <!-- Remove all style tags and id's and set them in divs that match the id's to hide/show them -->
+                <div class="code-breakdown wide-box planning">
+                    <h3 id="str-breakdown">Text</h3>
+                    <p id="str-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">str</span></p><p>type used to represent sequences of characters, typically text, enclosed within single quotes ('..') or double quotes ("..").</p>
+                    <h3 id="number-breakdown">Number</h3>
+                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">int</span></p><p>type used to represent integers (whole numbers without decimals).</p>
+                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">float</span></p><p>type used to represent floating-point numbers (numbers with fractional parts).</p>
+                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">complex</span></p><p>type used to represent complex numbers (numbers with a real and imaginary parts).</p>
+                    <h3 id="bool-breakdown">Boolean</h3>
+                    <p id="bool-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bool</span></p><p>type used to represent boolean values, which can either be <span style="color: #008722">True</span> or <span style="color: #ff0000">False</span>.</p>
+                    <h3 id="sequence-breakdown">Sequence</h3>
+                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">list</span></p><p>type used to represent ordered, mutable collections of items. Defined with square brackets [..].</p>
+                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">tuple</span></p><p>type used to represent ordered, immutable collections of items. Defined with parentheses (..).</p>
+                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">range</span></p><p>type used to represent an immutable sequence of numbers. Generated using the built-in range() function.</p>
+                    <p id="sequence-breakdown" style="padding: 15px;">Note that in Python, when we say a data type is "mutable," it means that its contents can be changed after it's created. "Immutable" means that the data type's contents cannot be changed after creation. Lists are mutable, 
+                        meaning you can add, remove, or modify elements. Tuples, on the other hand, are immutable, meaning once created, their elements cannot be changed.
+                    </p>
+                    <h3 id="binary-breakdown">Binary</h3>
+                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bytes</span></p><p>type used to represent an immutable sequence of bytes. Used to represent binary data. Defined with a prefix b'...'.</p>
+                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bytearray</span></p><p>type used to represent a mutable sequence of bytes. Similar to bytes but can be modified after creation.</p>
+                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">memoryview</span></p><p>type used to represent a memoryview objects which allow Python code to access the internal data of an object that supports the buffer protocol without copying.</p>
+                    <h3 id="set-breakdown">Set</h3>
+                    <p id="set-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">set</span></p><p>type used to represent an unordered collection of unique elements. Defined with curly braces {...} or by using the set() constructor.</p>
+                    <p id="set-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">frozenset</span></p><p>type used to represent an immutable set. Similar to set but cannot be modified after creation.</p>
+                    <h3 id="none-breakdown">None</h3>
+                    <p id="none-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">NoneType</span></p><p>type used to represent the absence of a value, often used as the return type of functions that don't explicitly return anything.</p>
+                    <h3 id="mapping-breakdown">Mapping</h3>
+                    <p id="mapping-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">dict</span></p><p>type used to represent a collection of key-value pairs. Also known as a dictionary. Defined with curly braces {key: value} or by using the dict() constructor.</p>
+                </div>
+                <div class="code-breakdown-btn">
+                    <!-- Possibly make prev btn a reset btn -->
+                    <button class="previous-btn" id="previous-btn">Previous</button>
+                    <button class="next-btn" id="next-btn">Next</button>
+                </div>
+            </div>
+            <div class="wide-box content-box center-content">
+                <p>We will get a little more into these shortly, and see some examples of each of them. But first lets figure out how to set these data types. In Python data types are set when you assign values to variables, in example when you type this:</p>
+                <!-- Fix the formatting of the code and spacing of text-->
+                <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">x = 5</span></p>
+                <p>The data type of 'int' is automatically assigned by Python.</p>
+                <p>Now what about this?</p>
+                <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">x = "John"</span></p>
+                <p>The data type of 'str' will be assigned in this case, since a str value was used.</p>
+            </div>
+        </section>
+        <section class="section-planning">
+            <div>
+                <h2>Data Types Continued</h2>
+            </div>
+        </section>
+        <div class="center-content">
+            <p>Awesome! Let's continue.</p>
+            <!-- Add more functionality than just next -->
+            <!-- Possibly a nav bar to the different sections -->
+            <div class="center-content">
+                <button class="next-btn">Next</button>
+            </div>
+        </div>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
     <script src="scripts/script.js"></script>

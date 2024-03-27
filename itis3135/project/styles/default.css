@@ -257,3 +257,31 @@ body a:hover {
     margin-right: auto;
     width: 800px;
 }
+
+.data-types table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.data-types caption {
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+}
+
+.data-types th {
+    border: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+    background-color: #207158;
+    color: white;
+}
+
+.data-types td {
+    border: 1px solid #dddddd;
+    padding: 8px;
+}
+
+.spacer {
+    margin-top: 15px;
+}
