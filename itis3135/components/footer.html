@@ -24,19 +24,22 @@
 <a id="validation_link_html" style="text-decoration: none;" href="https://validator.w3.org/check?uri=referer">
     <img style="border:0;width:88px;height:31px"
     src="images/button_validation_html5.png" alt="Valid HTML!">
-    
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
 </a>
 <a id="validation_link_css" style="text-decoration: none;" href="https://jigsaw.w3.org/css-validator/check/referer">
     <img style="border:0;width:88px;height:31px"
     src="images/button_validation_css.png" alt="Valid
-    CSS!">
-    
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
+    CSS!"> 
 </a>
+<a id="validation_link_disability" style="text-decoration: none;" href="https://wave.webaim.org/report#/check?uri=referer">
+    <img style="border:0;width:88px;height:31px"
+    src="images/button_validation_wcag.png" alt="Valid
+    WCAG!">
+</a>
+
+
+
+<script>
+    document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
+    document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
+    document.getElementById("validation_link_disability").setAttribute("href","https://wave.webaim.org/report#/" + location.href);
+</script>
