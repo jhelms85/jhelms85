@@ -13,19 +13,23 @@ document.addEventListener('DOMContentLoaded', function() {
 
 function renderFooter(data) {
     var footerHTML = '<nav class="link-bar">';
-    data.links.forEach(function(link) {
-        footerHTML += '<a href="' + link.url + '">' + link.text + '</a> || ';
+    
+    data.links.forEach(function(link, index) {
+        if (index !== 0) {
+            footerHTML += ' || ';
+        }
+        footerHTML += '<a href="' + link.url + '">' + link.text + '</a>';
     });
+    
     footerHTML += '</nav>';
 
-    footerHTML += '<p>Designed by: <a href="' + data.designedBy.url + '">' + data.designedBy.name + '</a></p>';
-
-    footerHTML += '<p>';
-    data.certifications.forEach(function(cert) {
-        footerHTML += '<a href="' + cert.url + '">' + cert.text + '</a>, ';
-    });
-    footerHTML = footerHTML.slice(0, -2);
-    footerHTML += '</p>';
+    footerHTML += '<p>Designed by: <a href="' + data.designedBy.url + '">' + data.designedBy.name + '</a>';
+    
+    var certificationsText = data.certifications.map(function(cert) {
+        return '<a href="' + cert.url + '">' + cert.text + '</a>';
+    }).join(", ");
+    
+    footerHTML += ' ©2024, certified in ' + certificationsText + '.</p>';
 
     footerHTML += '<p><strong>"' + data.disclaimer + '"</strong></p>';
 
@@ -43,4 +47,13 @@ function renderFooter(data) {
     });
 
     $('#footer').html(footerHTML);
+
+    $('#removeCSSButton').click(function() {
+        if (confirm("Are you sure you would like to remove styling? This is useful if you are experiencing rare compatibility issues. Refresh the page to restore styling.")) {
+            document.querySelectorAll('link[rel=stylesheet]').forEach(function(e) {
+                e.setAttribute('href', '');
+            });
+        }
+    });
 }
+

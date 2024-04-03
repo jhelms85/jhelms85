@@ -14,14 +14,26 @@ $(document).ready(function() {
 function renderHeader(data) {
     var headerHTML = '<h1>' + data.title + '</h1>';
     headerHTML += '<nav>';
-    data.links.forEach(function(link) {
-        headerHTML += '<a href="' + link.url + '">' + link.text + '</a> || ';
+
+    // Add links with dividers except for the first one
+    data.links.forEach(function(link, index) {
+        if (index !== 0) {
+            headerHTML += ' || '; // Add divider before the link
+        }
+        headerHTML += '<a href="' + link.url + '">' + link.text + '</a>';
     });
+
     headerHTML += '</nav>';
     headerHTML += '<nav class="secondary-navigation">';
-    data.secondaryLinks.forEach(function(link) {
-        headerHTML += '<a href="' + link.url + '">' + link.text + '</a> || ';
+
+    // Add secondary links with dividers except for the first one
+    data.secondaryLinks.forEach(function(link, index) {
+        if (index !== 0) {
+            headerHTML += ' || '; // Add divider before the link
+        }
+        headerHTML += '<a href="' + link.url + '">' + link.text + '</a>';
     });
+
     headerHTML += '</nav>';
     $('#header').html(headerHTML);
 }
