@@ -6,24 +6,22 @@
     <title>Jared Helms's Jittery Horse || ITIS 3135 || Interactive Drawing</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
 </head>
 <body>
     <header class="body-header">
-        <div data-include="components/header.html"></div>
+        <div class="nav-bar-container" id="header">
+            <!-- Header content will be loaded here dynamically -->
+        </div>
     </header>
     <main class="body-title centered-block custom-main">
         <h2>Interactive Drawing</h2>
     </main>
     <button class="centered-block" id="clear-btn" style="margin-bottom: 15px;">Clear Screen</button>
-    <footer class="body-footer" style = "padding-top: 80px;">
-        <div data-include="components/footer.html"></div>
+    <footer class="body-footer">
+        <div id="footer"></div>
     </footer>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.8.0/lib/p5.js"></script>
-    <script src="scripts/sketch.js"></script>
 </body>
 </html>

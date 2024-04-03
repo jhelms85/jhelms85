@@ -1,0 +1,39 @@
+{
+    "links": [
+        { "url": "https://webpages.charlotte.edu/jhelms85/", "text": "Charlotte.edu" },
+        { "url": "https://github.com/jhelms85/jhelms85.github.io/tree/main/itis3135", "text": "GitHub" },
+        { "url": "https://github.com/jhelms85/jhelms85.github.io", "text": "Github.io" },
+        { "url": "https://www.freecodecamp.org/JaredHelms", "text": "freeCodeCamp" },
+        { "url": "https://www.codecademy.com/profiles/jaredhelms01", "text": "CodeAcademy" },
+        { "url": "https://www.linkedin.com/in/jared-l-helms/", "text": "LinkedIn" }
+    ],
+    "designedBy": {
+        "name": "Helms Web Solutions",
+        "url": "https://helmswebsolutions.com/"
+    },
+    "certifications": [
+        { "url": "https://www.freecodecamp.org/certification/JaredHelms/responsive-web-design", "text": "Certified in RWD" },
+        { "url": "https://www.freecodecamp.org/certification/JaredHelms/javascript-algorithms-and-data-structures-v8", "text": "Certified in JS" }
+    ],
+    "disclaimer": "The finest in horse ADHD and other medications for horses.",
+    "validators": [
+        {
+            "id": "validation_link_html",
+            "url": "https://validator.w3.org/check?uri=referer",
+            "imgSrc": "images/button_validation_html5.png",
+            "imgAlt": "Valid HTML!"
+        },
+        {
+            "id": "validation_link_css",
+            "url": "https://jigsaw.w3.org/css-validator/check/referer",
+            "imgSrc": "images/button_validation_css.png",
+            "imgAlt": "Valid CSS!"
+        },
+        {
+            "id": "validation_link_disability",
+            "url": "https://wave.webaim.org/report#/check?uri=referer",
+            "imgSrc": "images/button_validation_wcag.png",
+            "imgAlt": "Valid WCAG!"
+        }
+    ]
+}

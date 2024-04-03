@@ -1,0 +1,23 @@
+{
+    "title": "Jared Helms's Jittery Horse || ITIS 3135",
+    "links": [
+        { "url": "./", "text": "Homepage" },
+        { "url": "introduction.html", "text": "Introduction" },
+        { "url": "contract.html", "text": "Contract" },
+        { "url": "tables.html", "text": "Tables" },
+        { "url": "forms.html", "text": "Form" },
+        { "url": "website_evaluations.html", "text": "Website Evaluations" },
+        { "url": "firstscripts.html", "text": "First Scripts" },
+        { "url": "byo_intro.html", "text": "BYO Intro" },
+        { "url": "calculator_try.html", "text": "Calculator Try" },
+        { "url": "about.html", "text": "About Jittery Horse" },
+        { "url": "project_overview.html", "text": "Project Overview" },
+        { "url": "arrays.html", "text": "Arrays" },
+        { "url": "interactiveDrawing.html", "text": "Interactive Drawing" },
+        { "url": "https://webpages.charlotte.edu/jhelms85/", "text": "Back to Main Site" }
+    ],
+    "secondaryLinks": [
+        { "url": "stuff/SumwebSIte.htm", "text": "CRAPPY Website" },
+        { "url": "hobby/index.html", "text": "Hobby Site" }
+    ]
+}

@@ -6,12 +6,16 @@
     <title>Jared Helms's Jittery Horse || ITIS 3135 || Contract</title>
     <link rel="stylesheet" href="styles/default.css">
     <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
 </head>
 <body>
     <header class="body-header">
-        <div data-include="components/header.html"></div>
+        <div class="nav-bar-container" id="header">
+            <!-- Header content will be loaded here dynamically -->
+        </div>
     </header>
-
     <main class="contract-body">
         <h2>Contract</h2>
         <p>I, Jared L. Helms agree to abide by the terms in my Spring 2024 ITSC3135-091 Web App Design and Development with my instructor, D.I. Von Briessen.</p>
@@ -19,14 +23,8 @@
         </p>
         <p>Signed: <span class="signiture">Jared L. Helms, 17 Jan 2024</span></p>
     </main>
-
     <footer class="body-footer">
-        <div data-include="components/footer.html"></div>
+        <div id="footer"></div>
     </footer>
-    <script>
-        document.getElementById("validation_link_html").setAttribute("href","https://validator.w3.org/check?uri=" + location.href);
-            document.getElementById("validation_link_css").setAttribute("href","https://jigsaw.w3.org/css-validator/validator?uri=" + location.href);
-    </script>
-    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>
