@@ -286,3 +286,32 @@ body a:hover {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+.code-input {
+    border: 1px solid #829399;
+    height: 41px;
+    width: 250px;
+    padding: 15px;
+    background-color: #000000;
+    color: #ffffff
+}
+
+.code-output {
+    border: 3px solid #00d169;
+    background-color: #000000;
+    color: #ffffff;
+    height: 150px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.quiz-test-btns {
+    display: block;
+    align-items: center;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

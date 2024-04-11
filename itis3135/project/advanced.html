@@ -13,8 +13,48 @@
 <body>
     <header class="page-header planning"><div data-include="components/header.html"></div></header>
     <main class="main-content">
+        <!-- Set display of all but first section to none -->
+        <h1>Advanced Python</h1>
         <div class="planning">
-            <p>Advanced Content Test</p>
+            <section class="section-planning" id="hello-world">
+                <div class="center-content wide-box planning">
+                    <h2>Let's code!</h2>
+                    <p>You have learned quite a bit about Python thus far, let's put some of this into action and write your first program!</p>
+                    <div class="spacer"></div>
+                    <p>Let's start with a classic, you'll be hard pressed to find a programmer who started with something other than this.</p>
+                    <div class="spacer"></div>
+                    <p>In the input box, type</p>
+                    <code>print("Hello, World!")</code>
+                    <p>exactly as shown, then press run!</p>
+                    <div class="spacer"></div>
+                    <label for="userInput">Your code:</label>
+                    <div style="margin-top: 10px;"></div>
+                    <input class="code-input" type="text" id="userInput" name="userInput" placeholder='print("Hello, World!")'>
+                    <button class="previous-btn" onclick="validateInput()">Run</button>
+                    <div class="spacer"></div>
+                    <div class="code-output center-content" id="first-code-output" style="display: none;"></div>
+                    <div class="spacer"></div>
+                    <div class="congrats-div" id="congrats-div" style="display: none;">
+                        <h3>Congratulations!</h3>
+                        <p>You have successfully wrote your first program! Let's get a little more challenging!</p>
+                        <button class="next-btn" id="first-code-next-btn" style="margin-top: 15px; margin-bottom: 15px;">Next</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-planning" id="advanced-content" style="display: block;">
+                <div class="wide-box planning center-content">
+                    <h2>Advanced Calculations</h2>
+                    <p>I hope you love math!</p>
+                    <p>Im kidding of course.. well kind of. As we previously learned, Python has tons of built in functions to do calculations for you! In this section
+                        we will dive a little more into some of the advanced calculations you can do!</p>
+                        <!-- Figure out how to display just the basic math section and hide the rest -->
+                        <p><small>To review the basic calculations we did click <a href="basics.html" target="_blank">here</a>!</small></p>
+                    <p>In this section, we will dive into some more advanced Python Math functions.</p>
+                    <div class="planning content-box center-content">
+                        <h3></h3>
+                    </div>
+                </div>
+            </section>
         </div>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
