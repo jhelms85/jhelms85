@@ -14,6 +14,7 @@
         { "url": "project_overview.html", "text": "Project Overview" },
         { "url": "arrays.html", "text": "Arrays" },
         { "url": "interactiveDrawing.html", "text": "Interactive Drawing" },
+        { "url": "slideshow.html", "text": "Slideshow" },
         { "url": "https://webpages.charlotte.edu/jhelms85/", "text": "Back to Main Site" }
     ],
     "secondaryLinks": [

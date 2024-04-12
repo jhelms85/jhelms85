@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Helms's Jittery Horse || ITIS 3135 || Homepage</title>
+    <link rel="stylesheet" href="styles/default.css">
+    <script src="https://farawayforests.com/cdn/accumulus/accumulus.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/footer.js"></script>
+</head>
+<body>
+    <header class="body-header">
+        <div class="nav-bar-container" id="header">
+            <!-- Header content will be loaded here dynamically -->
+        </div>
+    </header>
+    <main class="body-title">
+        <h2>Slideshow</h2>
+        <div class="slideshow-container" id="slideshow-container">
+          <!-- Slides will be loaded here -->
+        </div>
+
+        <button class="slides-btn" onclick="plusSlides(-1)">&#10094;</button>
+        <button class="slides-btn" onclick="plusSlides(1)">&#10095;</button>
+      
+        <div class="caption">
+          <p id="caption"></p>
+        </div>
+      
+        <div class="thumbnail-container" id="thumbnail-container">
+          <!-- Thumbnails will be loaded here -->
+        </div>
+
+        <div class="centered-block">
+            <p>Images generated using AI: <a href="https://deepdreamgenerator.com/generate">Deep Dream Generator</a>.</p>
+        </div>
+    </main>
+    <footer class="body-footer">
+        <div id="footer"></div>
+        <button class="btn" id="removeCSSButton" type="button" style="margin-top: 25px;">No CSS</button>
+    </footer>
+    <script src="scripts/slideshow_script.js"></script>
+</body>
+</html>

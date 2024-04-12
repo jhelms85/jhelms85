@@ -1,0 +1,72 @@
+[
+    {
+        "name": "Joker",
+        "filename": "images/joker_ai_image.jpg",
+        "alt": "Illustration of a joker card",
+        "caption": "J - Joker",
+        "prompt": "AI Prompt: A mysterious and colorful depiction of a joker card with a mischievous grin."
+    },
+    {
+        "name": "Anchor",
+        "filename": "images/anchor_ai_image.jpg",
+        "alt": "Stylized illustration of a vintage anchor",
+        "caption": "A - Anchor",
+        "prompt": "AI Prompt: A stylized illustration of a vintage anchor set against a backdrop of swirling waves."
+    },
+    {
+        "name": "River",
+        "filename": "images/river_ai_image.jpg",
+        "alt": "Serene landscape painting featuring a winding river",
+        "caption": "R - River",
+        "prompt": "AI Prompt: A serene landscape painting featuring a winding river flowing through lush greenery."
+    },
+    {
+        "name": "Eclipse",
+        "filename": "images/eclipse_ai_image.jpg",
+        "alt": "Striking image of a solar eclipse",
+        "caption": "E - Eclipse",
+        "prompt": "AI Prompt: A striking image of a solar eclipse, with the moon partially covering the sun in a dramatic display."
+    },
+    {
+        "name": "Dragon",
+        "filename": "images/dragon_ai_image.jpg",
+        "alt": "Awe-inspiring depiction of a fierce dragon",
+        "caption": "D - Dragon",
+        "prompt": "AI Prompt: An awe-inspiring depiction of a fierce dragon soaring through the sky amidst billowing clouds."
+    },
+    {
+        "name": "Hurricane",
+        "filename": "images/hurricane_ai_image.jpg",
+        "alt": "Powerful illustration capturing the swirling chaos of a hurricane",
+        "caption": "H - Hurricane",
+        "prompt": "AI Prompt: A powerful illustration capturing the swirling chaos of a massive hurricane viewed from space."
+    },
+    {
+        "name": "Emerald",
+        "filename": "images/emerald_ai_image.jpg",
+        "alt": "Close-up rendering of a sparkling emerald gemstone",
+        "caption": "E - Emerald",
+        "prompt": "AI Prompt: A close-up rendering of a sparkling emerald gemstone, showcasing its rich green hues and facets."
+    },
+    {
+        "name": "Lightning",
+        "filename": "images/lightning_ai_image.jpg",
+        "alt": "Dynamic scene of jagged lightning bolts illuminating a stormy sky",
+        "caption": "L - Lightning",
+        "prompt": "AI Prompt: A dynamic scene of jagged lightning bolts illuminating a stormy sky with flashes of intense light."
+    },
+    {
+        "name": "Moon",
+        "filename": "images/moon_ai_image.jpg",
+        "alt": "Breathtaking view of the full moon suspended in a midnight-blue sky",
+        "caption": "M - Moon",
+        "prompt": "AI Prompt: A breathtaking view of the full moon suspended in a midnight-blue sky, casting its gentle glow over a serene landscape."
+    },
+    {
+        "name": "Star",
+        "filename": "images/star_ai_image.jpg",
+        "alt": "Mesmerizing image of a brilliant star shining brightly",
+        "caption": "S - Star",
+        "prompt": "AI Prompt: A mesmerizing image of a brilliant star shining brightly against a backdrop of deep space, surrounded by distant galaxies."
+    }
+]
