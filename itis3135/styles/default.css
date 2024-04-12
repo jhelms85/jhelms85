@@ -186,6 +186,12 @@ body {
     display: none;
 }
 
+.numbertext {
+    color: #40cc7a;
+    font-size: 15px;
+    padding: 8px 12px;
+  }
+
 .page-design, .dynamic-functionality {
     margin-left: auto;
     margin-right: auto;
@@ -249,8 +255,8 @@ body {
 
 .slides-btn {
     background-color: #222;
-    border: 1px solid aquamarine;
-    color: aquamarine;
+    border: 1px solid #40cc7a;
+    color: #40cc7a;
     height: 30px;
     margin-top: 25px;
     width: 50px;
