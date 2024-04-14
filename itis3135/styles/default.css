@@ -3,11 +3,11 @@ a:link {
 }
 
 a:visited {
-    color:darkgreen;
+    color:rgb(1, 207, 121);
 }
 
 a:hover {
-    color:greenyellow;
+    color:rgb(0, 105, 40);
 }
 
 .array-pass-fail-message {

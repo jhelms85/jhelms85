@@ -16,18 +16,25 @@
     <main class="main-content">
         <!-- SECTION -->
         <section class="syntax-overview section-planning" id="syntax-overview" style="display: block;">
-            <div class="center-content side-by-side planning">
+            <div class="center-content planning">
                 <h1>Python Syntax</h1>
                 <p>In this section we will begin to dive into Python syntax. I'll assume you have some questions.</p>
             </div>
-            <div class="side-by-side planning">
+            <div class="side-by-side">
                 <div class="content-box planning">
                     <h3>What on Earth is syntax?</h3>
-                    <p>ADD CONTENT</p>
+                    <p>In programming, syntax refers to the rules that dictate the structure and organization of code. It determines how statements should be written to be valid and understandable by the programming language interpreter or compiler.</p>
+                    <p>Understanding syntax is crucial because even minor errors in syntax can cause the program to behave unexpectedly or fail to run altogether. Common syntax errors include misspelling keywords, missing punctuation, and improper indentation.</p>
+                    <p>By mastering syntax, you'll be able to write clean, readable code that is easier to maintain and debug.</p>
                 </div>
                 <div class="content-box planning">
                     <h3>Okay, so?</h3>
-                    <p>ADD CONTENT</p>
+                    <p>Now that you have a basic understanding of what syntax is, let's explore some fundamental elements of Python syntax.</p><ul>
+                        <li><strong>Variables:</strong> Used to store data values that can be manipulated or referenced in the program.</li>
+                        <li><strong>Data types:</strong> Define the type of data that can be stored in variables, such as integers, floats, strings, and booleans.</li>
+                        <li><strong>Operators:</strong> Symbols or keywords used to perform operations on variables and values, such as arithmetic, comparison, and logical operations.</li>
+                    </ul>
+                    <p>Throughout this course, we'll delve deeper into each of these concepts and learn how to use them effectively in Python programming.</p>
                 </div>
             </div>
             <div class="content-box center-content side-by-side planning">
@@ -60,30 +67,36 @@
             <div class="indentation-container planning">
                 <div class="wide-box planning">
                     <h3>Indentation</h3>
-                    <p>ADD CONTENT</p>
+                    <p>Indentation is an essential aspect of Python syntax. It is used to define the structure and hierarchy of code blocks, such as loops, conditionals, and function definitions.</p>
                 </div>
                 <div class="side-by-side planning">
                     <div class="content-box planning">
                         <h3>What is indentation?</h3>
-                        <p>ADD CONTENT</p>
+                        <p>Indentation refers to the spaces or tabs at the beginning of a line of code that determine its level of nesting within a code block. In Python, indentation is used to signify the beginning and end of code blocks, eliminating the need for explicit delimiters like curly braces 
+                            ({}) found in other programming languages.</p>
+                        <div class="spacer"></div>
+                        <p>Indentation is extremely important and often is the cause for many issues running code, by ensuring that we always practice proper indentation, we can prevent many mistakes that will save you from headaches later!</p>
+                        <div class="spacer"></div>
+                        <p>To the right of this. you will see a quick example of this in action!</p>
                     </div>
-                    <div class="content-box planning" style="display: flex; flex-direction: column;">
+                    <div class="content-box side-by-side planning" style="display: flex; flex-direction: column;">
                         <h3>Example:</h3>
-                        <!-- Fix these to line up somehow (table)? -->
-                        <div class="center-content planning">
-                            <div class="code-container planning">
+                        <div>
+                            <div class="center-content planning">
                                 <p style="margin-left: 15px; margin-right: 35px;">Correct:</p>
-                                <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid limegreen;">
-                                    <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
-                                </code>
-                            </div>
-                            <div class="code-container planning" style="padding-top: 25px;">
+                                <div class="code-container planning">
+                                    <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid limegreen;">
+                                        <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
+                                            &nbsp;&nbsp;&nbsp;&nbsp;<span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
+                                    </code>
+                                </div>
                                 <p style="margin-left: 15px; margin-right: 35px;">Incorrect:</p>
-                                <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid red;">
-                                    <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
-                                        <span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
-                                </code>
+                                <div class="code-container planning">
+                                    <code class="code-block"  style="width: 200px; text-align: left; padding: 20px; border: 2px solid red;">
+                                        <span style="color: white;">if</span> <span style="color: rgb(255, 0, 255);">5 > 2</span><span style="color: rgb(115, 255, 0);">:</span><br>
+                                            <span style="color: rgb(0, 204, 255);">print</span>(<span style="color: red;">"TRUE!"</span>)
+                                    </code>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -118,27 +131,12 @@
                     <p>Be sure to check the settings of whatever IDE that you are using to see what the default spacing is.</p>
                 </div>
             </div>
-            <div class="wide-box center-content planning">
-                <h3>More examples:</h3>
+            <div class="center-content">
+                <p>Go to next section:</p>
+                <div class="center-content">
+                    <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'basics.html';">Basics</button>
+                </div>
             </div>
-            <div class="planning">
-                <p>ADD CONTENT</p>
-            </div>
-            <div class="planning">
-                <p>ADD CONTENT</p>
-            </div>
-        </section>
-        <!-- SECTION -->
-        <section class="section-planning" style="display: block;">
-            <div>
-                <p>ADD CONTENT</p>
-            </div>
-        </section>
-        <!-- Add more functionality than just next -->
-        <!-- Possibly a nav bar to the different sections -->
-        <div class="center-content">
-            <button class="next-btn">Next</button>
-        </div>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
     <script src="scripts/script.js"></script>

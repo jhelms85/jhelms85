@@ -104,11 +104,6 @@
                     <h3 id="mapping-breakdown">Mapping</h3>
                     <p id="mapping-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">dict</span></p><p>type used to represent a collection of key-value pairs. Also known as a dictionary. Defined with curly braces {key: value} or by using the dict() constructor.</p>
                 </div>
-                <div class="code-breakdown-btn">
-                    <!-- Possibly make prev btn a reset btn -->
-                    <button class="previous-btn" id="previous-btn">Previous</button>
-                    <button class="next-btn" id="next-btn">Next</button>
-                </div>
             </div>
             <div class="wide-box content-box center-content">
                 <p>We will get a little more into these shortly, and see some examples of each of them. But first lets figure out how to set these data types. In Python data types are set when you assign values to variables, in example when you type this:</p>
@@ -120,6 +115,40 @@
                 <p>The data type of 'str' will be assigned in this case, since a str value was used.</p>
             </div>
         </section>
+        <section class="section-planning">
+            <div class="wide-box center-content planning">
+                <h2>Functions</h2>
+                <p>In Python, functions are a block of reusable code that performs a specific task. They allow you to break down your program into smaller, manageable parts, making your code more organized and easier to understand.</p>
+                
+                <h3>Definition of Functions:</h3>
+                <p>A function in Python is defined using the <code>def</code> keyword followed by the function name and parentheses. Any parameters should be placed within the parentheses. The code block that follows the function definition is the body of the function.</p>
+        
+                <h3>Syntax of Defining a Function:</h3>
+                <pre><code>def function_name(parameters):
+                Function body: Code block that performs the task
+                return [expression]
+        </code></pre>
+        
+                <h3>Parameters and Arguments:</h3>
+                <p>Parameters are placeholders in the function definition. Arguments are the actual values passed to the function when it is called.</p>
+        
+                <h3>Return Statement:</h3>
+                <p>The <code>return</code> statement is used to exit a function and return a value (if any) to the caller. If the <code>return</code> statement is not present, the function will return <code>None</code> by default.</p>
+        
+                <h3>Calling a Function:</h3>
+                <p>To call a function, simply use the function name followed by parentheses and any required arguments.</p>
+        
+                <h3>Example:</h3>
+                <pre><code>def add_numbers(a, b):
+            """This function adds two numbers."""
+            return a + b
+        
+        result = add_numbers(3, 5)
+        print(result)  # Output: 8
+        </code></pre>
+            </div>
+        </section>
+        
         <section class="section-planning" style="display: block;">
             <div class="wide-box center-content planning">
                 <h2>Basic Math Calculations</h2>
@@ -162,17 +191,63 @@
             </div>
         </section>
         <section class="section-planning" style="display: block;">
+            <div class="wide-box center-content planning">
+                <h2>Multiplication, Division, and Remainder</h2>
+                <p>Now, let's explore some more basic arithmetic operations in Python: multiplication, division, and finding the remainder.</p>
+                <p>These operations are fundamental in programming and can be used in various scenarios to perform calculations.</p>
+                <p>Let's dive into some examples!</p>
+            </div>
             <div class="wide-box content-box center-content">
-                <h3>Multiplication, Division, and Remainder</h3>
-                
+                <h3>Multiplication</h3>
+                <p>To perform multiplication in Python, use the <code>*</code> operator:</p>
+                <div class="spacer"></div>
+                <code class="code-input">print(3 * 4)</code>
+                <div class="spacer"></div>
+                <p>This will output:</p>
+                <div class="spacer"></div>
+                <code class="code-input">12</code>
+                <div class="spacer"></div>
+                <p>Similarly, you can use variables for multiplication:</p>
+                <div class="spacer"></div>
+                <div class="code-input center-content" style="height: fit-content;">
+                    <code>y = 3</code><br>
+                    <code>print(y * 4)</code>
+                </div>
+                <div class="spacer"></div>
+                <p>Which will also result in:</p>
+                <div class="spacer"></div>
+                <code class="code-input">12</code>
+                <div class="spacer"></div>
+            </div>
+            <div class="wide-box content-box center-content">
+                <h3>Division</h3>
+                <p>Division in Python can be performed using the <code>/</code> operator:</p>
+                <div class="spacer"></div>
+                <code class="code-input">print(10 / 2)</code>
+                <div class="spacer"></div>
+                <p>Which yields:</p>
+                <div class="spacer"></div>
+                <code class="code-input">5.0</code>
+                <div class="spacer"></div>
+                <p>It's important to note that division in Python results in a floating-point number.</p>
+            </div>
+            <div class="wide-box content-box center-content">
+                <h3>Remainder</h3>
+                <p>To find the remainder of a division operation, you can use the modulus operator <code>%</code>:</p>
+                <div class="spacer"></div>
+                <code class="code-input">print(10 % 3)</code>
+                <div class="spacer"></div>
+                <p>This gives:</p>
+                <div class="spacer"></div>
+                <code class="code-input">1</code>
+                <div class="spacer"></div>
+                <p>The remainder operator is particularly useful in tasks like checking for divisibility or cycling through values.</p>
             </div>
         </section>
         <div class="center-content">
             <p>Awesome! Let's continue.</p>
-            <!-- Add more functionality than just next -->
-            <!-- Possibly a nav bar to the different sections -->
             <div class="center-content">
-                <button class="next-btn">Next</button>
+                <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'advanced.html';">Advanced</button>
             </div>
         </div>
     </main>

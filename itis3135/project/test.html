@@ -20,145 +20,53 @@
                 <div class="side-by-side planning">
                     <div class="content-box planning">
                         <h3>Quiz</h3>
-                        <p>The quiz will consist of 20 questions.</p>
-                        <p>Do your best to answer all of the questions!</p>
+                        <p>The quiz will consist of 15 questions covering the topics learned in this course. You can take this as much as you want to improve proficiency.</p>
+                        <p>Do your best to answer all of the questions! You'll receive immediate feedback upon completion.</p>
+                        <div class="spacer"></div>
+                        <p>Don't hesitate to look back over the course as needed to clairify topics you may have questions about.</p>
                     </div>
                     <div class="content-box planning">
                         <h3>Test</h3>
-                        <p>ADD CONTENT</p>
+                        <p>The test will assess your understanding of the concepts learned throughout each of the sections:</p>
+                        <ul>
+                            <li>Functions</li>
+                            <li>Syntax</li>
+                            <li>Import</li>
+                            <li>Calculations</li>
+                            <li>Documentation</li>
+                        </ul>
+                        <p>Prepare yourself by reviewing the material thoroughly. You'll have a limited time to complete the test, so manage your time wisely.</p>
+                        <p>The test is similar to the quiz, but consists of 10 questions.</p>
+                        <p>Good luck!</p>
                     </div>
+                </div>
+                <div class="quiz-test-btns">
+                    <button class="next-btn">Start Quiz</button>
+                    <button class="next-btn">Start Test</button>
                 </div>
             </div>
         </section>
-        <div class="quiz-container" id="quiz-container" style="display: none;">
-            <section class="section-planning" id="quiz-question-one">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-two">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-three">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-four">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-five">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-six">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-seven">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-eight">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-nine">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-ten">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-eleven">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-twelve">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-thirteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-fourteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-fifteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-sixteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-seventeen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-eighteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-nineteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="quiz-question-twenty">
-                <p></p>
-            </section>
+        <div class="quiz-container center-content content-box" id="quiz-container" style="display: block;">
+            <div class="center-content planning" id="quiz-questions">
+                <!-- Questions will be dynamically generated here -->
+            </div>
+            <div class="quiz-btns">
+                <button id="quiz-reset-btn">Reset All</button>
+                <button id="quiz-submit-btn">Submit Quiz</button>
+            </div>
+            <!-- Add this div to display the quiz result -->
+            <div id="quiz-result"></div>
         </div>
-        <div class="test-container" id="test-container" style="display: none;">
-            <section class="section-planning" id="test-question-one">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-two">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-three">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-four">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-five">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-six">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-seven">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-eight">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-nine">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-ten">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-eleven">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-twelve">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-thirteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-fourteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-fifteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-sixteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-seventeen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-eighteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-nineteen">
-                <p></p>
-            </section>
-            <section class="section-planning" id="test-question-twenty">
-                <p></p>
-            </section>
-            
-        </div>
-        <div class="quiz-test-btns">
-            <button class="next-btn">Go To Quiz!</button>
-            <button class="next-btn">Go To Test!</button>
-        </div>
+        
+        <section class="test-container center-content content-box" id="test-container" style="display: block;">
+            <div class="center-content planning" id="test-questions">
+                <!-- Questions will be dynamically generated here -->
+            </div>
+            <div class="test-btns">
+                <button id="test-reset-btn">Reset All</button>
+                <button id="test-submit-btn">Submit Test</button>
+            </div>
+        </section>
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
     <script src="scripts/script.js"></script>
