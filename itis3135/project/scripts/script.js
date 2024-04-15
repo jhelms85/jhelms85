@@ -45,89 +45,133 @@ function validateInput() {
 
 /* Functions for test.html page */
 
-const questionsURL = 'components/questions.json';
-
-async function fetchQuestions(url) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error('Network response was not ok');
-        }
-        const questions = await response.json();
-        return questions;
-    } catch (error) {
-        console.error('Error fetching questions:', error);
-    }
-}
-
-async function loadQuestions() {
-    const questions = await fetchQuestions(questionsURL);
-    return questions;
-}
-
-async function generateQuizQuestions() {
-    const quizContainer = document.getElementById('quiz-questions');
-    const questions = await loadQuestions();
-    questions.quiz.forEach((questionObj, index) => {
-        const questionContainer = document.createElement('div');
-        questionContainer.classList.add('question-container');
-        questionContainer.innerHTML = `<p>${index + 1}: ${questionObj.question}</p>`;
-        
-        questionObj.options.forEach((option, optionIndex) => {
-            const answerLabel = document.createElement('label');
-            answerLabel.innerHTML = `<input type="radio" name="quiz-question-${index}" value="${optionIndex}">${option}<br>`;
-            questionContainer.appendChild(answerLabel);
-        });
-
-        quizContainer.appendChild(questionContainer);
-    });
-
-    document.getElementById('quiz-reset-btn').addEventListener('click', resetQuiz);
-    document.getElementById('quiz-submit-btn').addEventListener('click', submitQuiz);
-}
-
-async function generateTestQuestions() {
-    const testContainer = document.getElementById('test-questions');
-    const questions = await loadQuestions();
-    questions.test.forEach((questionObj, index) => {
-        const questionContainer = document.createElement('div');
-        questionContainer.classList.add('question-container');
-        questionContainer.innerHTML = `<p>Test Question ${index + 1}: ${questionObj.question}</p>`;
-        
-        questionObj.options.forEach((option, optionIndex) => {
-            const answerLabel = document.createElement('label');
-            answerLabel.innerHTML = `<input type="radio" name="test-question-${index}" value="${optionIndex}">${option}<br>`;
-            questionContainer.appendChild(answerLabel);
-        });
-
-        testContainer.appendChild(questionContainer);
-    });
-}
-
-function submitQuiz() {
-    const quizQuestions = document.querySelectorAll('#quiz-questions .question-container');
-    let correctCount = 0;
-
-    quizQuestions.forEach(question => {
-        const selectedAnswer = question.querySelector('input[type="radio"]:checked');
-        if (selectedAnswer) {
-            const questionIndex = selectedAnswer.getAttribute('name').split('-')[1];
-            const correctAnswerIndex = questions.quiz[questionIndex].answer;
-            if (selectedAnswer.value === correctAnswerIndex) {
-                correctCount++;
-            }
-        }
-    });
-
-    const resultSection = document.getElementById('quiz-result');
-    resultSection.innerHTML = `<p>${correctCount} out of 10 questions were answered correctly.</p>`;
-}
-
-
 window.onload = function() {
-    generateQuizQuestions();
-    generateTestQuestions();
-}
+    const quizBtn = document.querySelector('.quiz-test-btns .next-btn:first-child');
+    const testBtn = document.querySelector('.quiz-test-btns .next-btn:last-child');
+    const quizSection = document.getElementById('test-top');
+    const quizContainer = document.getElementById('quiz-container');
+    const testContainer = document.getElementById('test-container');
+    const exitQuizBtn = document.getElementById('exit-quiz-btn');
+    const quizResetBtn = document.getElementById('quiz-reset-btn');
+    const quizSubmitBtn = document.getElementById('quiz-submit-btn');
+    const exitTestBtn = document.getElementById('exit-test-btn');
+    const testResetBtn = document.getElementById('test-reset-btn');
+    const testSubmitBtn = document.getElementById('test-submit-btn');
+
+    quizBtn.addEventListener('click', function() {
+        quizSection.style.display = 'none';
+        quizContainer.style.display = 'block';
+    });
+
+    testBtn.addEventListener('click', function() {
+        quizSection.style.display = 'none';
+        testContainer.style.display = 'block';
+    });
+
+    exitQuizBtn.addEventListener('click', function() {
+        if (confirm("Are you sure you want to exit the quiz?")) {
+            window.location.href = 'test.html';
+        }
+    });
+
+    exitTestBtn.addEventListener('click', function() {
+        if (confirm("Are you sure you want to exit the test?")) {
+            window.location.href = 'quiz.html';
+        }
+    });
+
+    quizResetBtn.addEventListener('click', function() {
+        if (confirm("Are you sure you want to reset the quiz?")) {
+            const quizForms = document.querySelectorAll('#quiz-container .answers form');
+            quizForms.forEach(quizForm => {
+                quizForm.reset();
+            });
+
+            const quizResult = document.getElementById('quiz-result');
+            quizResult.innerText = '';
+            
+            const answerLabels = document.querySelectorAll('#quiz-container label');
+            answerLabels.forEach(label => {
+                label.style.color = '';
+            });
+        }
+    });
+
+    testResetBtn.addEventListener('click', function() {
+        if (confirm("Are you sure you want to reset the test?")) {
+            const testForms = document.querySelectorAll('#test-container .answers form');
+            testForms.forEach(testForm => {
+                testForm.reset();
+            });
+
+            const testResult = document.getElementById('test-result');
+            testResult.innerText = '';
+            
+            const answerLabels = document.querySelectorAll('#test-container label');
+            answerLabels.forEach(label => {
+                label.style.color = '';
+            });
+        }
+    });
+
+    quizSubmitBtn.addEventListener('click', function() {
+        const quizForms = document.querySelectorAll('#quiz-container .answers form');
+        let correctCount = 0;
+        let totalQuestions = 0;
+    
+        quizForms.forEach(quizForm => {
+            const selectedAnswer = quizForm.querySelector('input[type="radio"]:checked');
+            if (selectedAnswer) {
+                const userAnswer = selectedAnswer.value;
+                const correctValue = quizForm.querySelector('span[id*="quiz-correct-answer"]').innerText;
+                if (userAnswer === correctValue) {
+                    correctCount++;
+                }
+                totalQuestions++;
+            }
+        });
+    
+        const percentage = totalQuestions === 0 ? 0 : ((correctCount / totalQuestions) * 100).toFixed(2);
+    
+        const quizResult = document.getElementById('quiz-result');
+        quizResult.innerText = `${correctCount} | ${totalQuestions} Correct (${percentage}%)`;
+    
+        quizForms.forEach(quizForm => {
+            const correctSpan = quizForm.querySelector('span[id*="quiz-correct-answer"]');
+            correctSpan.style.color = 'green';
+        });
+        
+    });
+
+    testSubmitBtn.addEventListener('click', function() {
+        const testForms = document.querySelectorAll('#test-container .answers form');
+        let correctCount = 0;
+        let totalQuestions = 0;
+    
+        testForms.forEach(testForm => {
+            const selectedAnswer = testForm.querySelector('input[type="radio"]:checked');
+            if (selectedAnswer) {
+                const userAnswer = selectedAnswer.value;
+                const correctValue = testForm.querySelector('span[id*="test-correct-answer"]').innerText;
+                if (userAnswer === correctValue) {
+                    correctCount++;
+                }
+                totalQuestions++;
+            }
+        });
+    
+        const percentage = totalQuestions === 0 ? 0 : ((correctCount / totalQuestions) * 100).toFixed(2);
+    
+        const testResult = document.getElementById('test-result');
+        testResult.innerText = `${correctCount} | ${totalQuestions} Correct (${percentage}%)`;
+    
+        testForms.forEach(testForm => {
+            const correctSpan = testForm.querySelector('span[id*="test-correct-answer"]');
+            correctSpan.style.color = 'green';
+        });
+        
+    });
+};
 
 
 

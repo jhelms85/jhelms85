@@ -308,7 +308,7 @@ body a:hover {
     text-align: center;
 }
 
-.quiz-test-btns {
+.test-btns {
     display: block;
     align-items: center;
     text-align: center;
@@ -326,3 +326,13 @@ body a:hover {
     margin-bottom: 15px;
 }
 
+.answers {
+    width:fit-content;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quiz-test-btns {
+    text-align: center;
+}

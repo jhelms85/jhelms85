@@ -13,14 +13,14 @@
 <body>
     <header class="page-header planning"><div data-include="components/header.html"></div></header>
     <main class="main-content">
-        <section class="section-planning" id="test-top">
+        <section class="section-planning" id="test-top" style="display: block;">
             <div class="center-content planning">
                 <h1>Test/Quiz</h1>
                 <p>Let's put what you have learned to the test!</p>
                 <div class="side-by-side planning">
                     <div class="content-box planning">
                         <h3>Quiz</h3>
-                        <p>The quiz will consist of 15 questions covering the topics learned in this course. You can take this as much as you want to improve proficiency.</p>
+                        <p>The quiz will consist of 5 questions covering the topics learned in this course. You can take this as much as you want to improve proficiency.</p>
                         <p>Do your best to answer all of the questions! You'll receive immediate feedback upon completion.</p>
                         <div class="spacer"></div>
                         <p>Don't hesitate to look back over the course as needed to clairify topics you may have questions about.</p>
@@ -36,7 +36,7 @@
                             <li>Documentation</li>
                         </ul>
                         <p>Prepare yourself by reviewing the material thoroughly. You'll have a limited time to complete the test, so manage your time wisely.</p>
-                        <p>The test is similar to the quiz, but consists of 10 questions.</p>
+                        <p>The test is similar to the quiz, and consists of 10 questions.</p>
                         <p>Good luck!</p>
                     </div>
                 </div>
@@ -46,27 +46,178 @@
                 </div>
             </div>
         </section>
-        <div class="quiz-container center-content content-box" id="quiz-container" style="display: block;">
-            <div class="center-content planning" id="quiz-questions">
-                <!-- Questions will be dynamically generated here -->
+        <div class="quiz-container wide-box center-content content-box" id="quiz-container" style="display: none;">
+            <h3>Quiz</h3>
+            <div id="quiz-questions">
+                <p>1. What is the result of this statement:</p>
+                <p>print("Hello!")</p>
+                <div class="answers">
+                    <form id="quiz-form-1">
+                        <input type="radio" name="quiz-answer-1" value="Hello!" id="quiz-answer1-1">
+                        <label for="quiz-answer1-1"><span id="quiz-correct-answer-1">Hello!</span></label><br>
+                        <input type="radio" name="quiz-answer-1" value="Error" id="quiz-answer2-1">
+                        <label for="quiz-answer2-1">Error</label><br>
+                        <input type="radio" name="quiz-answer-1" value="Hello" id="quiz-answer3-1">
+                        <label for="quiz-answer3-1">Hello</label><br>
+                        <input type="radio" name="quiz-answer-1" value="'Hello!'" id="quiz-answer4-1">
+                        <label for="quiz-answer4-1">"Hello!"</label><br>
+                    </form>
+                </div>
             </div>
-            <div class="quiz-btns">
-                <button id="quiz-reset-btn">Reset All</button>
-                <button id="quiz-submit-btn">Submit Quiz</button>
+            <div id="quiz-questions">
+                <p>2. Which are examples of valid Python data types?</p>
+                <div class="answers">
+                    <form id="quiz-form-2">
+                        <input type="radio" name="quiz-answer-2" value="str, int, dict" id="quiz-answer1-2">
+                        <label for="quiz-answer1-2"><span id="quiz-correct-answer-2">str, int, dict</span></label><br>
+                        <input type="radio" name="quiz-answer-2" value="frozen, binary, str" id="quiz-answer2-2">
+                        <label for="quiz-answer2-2">frozen, binary, str</label><br>
+                        <input type="radio" name="quiz-answer-2" value="memory, set, int" id="quiz-answer3-2">
+                        <label for="quiz-answer3-2">memory, set, int</label><br>
+                        <input type="radio" name="quiz-answer-2" value="tuple, octagon, square" id="quiz-answer4-2">
+                        <label for="quiz-answer4-2">tuple, octagon, square</label><br>
+                    </form>
+                </div>
             </div>
-            <!-- Add this div to display the quiz result -->
-            <div id="quiz-result"></div>
-        </div>
-        
-        <section class="test-container center-content content-box" id="test-container" style="display: block;">
-            <div class="center-content planning" id="test-questions">
-                <!-- Questions will be dynamically generated here -->
+            
+            <div id="quiz-questions">
+                <p>3. What is the correct syntax for defining a function in Python?</p>
+                <div class="answers">
+                    <form id="quiz-form-3">
+                        <input type="radio" name="quiz-answer-3" value="def my_function():" id="quiz-answer1-3">
+                        <label for="quiz-answer1-3"><span id="quiz-correct-answer-3">def my_function():</span></label><br>
+                        <input type="radio" name="quiz-answer-3" value="function my_function():" id="quiz-answer2-3">
+                        <label for="quiz-answer2-3">function my_function():</label><br>
+                        <input type="radio" name="quiz-answer-3" value="my_function() def:" id="quiz-answer3-3">
+                        <label for="quiz-answer3-3">my_function() def:</label><br>
+                        <input type="radio" name="quiz-answer-3" value="def function my_function():" id="quiz-answer4-3">
+                        <label for="quiz-answer4-3">def function my_function():</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="quiz-questions">
+                <p>4. Which of the following is a correct way to comment out multiple lines in Python?</p>
+                <div class="answers">
+                    <form id="quiz-form-4">
+                        <input type="radio" name="quiz-answer-4" value="/* This is a comment */" id="quiz-answer1-4">
+                        <label for="quiz-answer1-4">/* This is a comment */</label><br>
+                        <input type="radio" name="quiz-answer-4" value="# This is a comment" id="quiz-answer2-4">
+                        <label for="quiz-answer2-4"><span id="quiz-correct-answer-4"># This is a comment</span></label><br>
+                        <input type="radio" name="quiz-answer-4" value="HTML comment" id="quiz-answer3-4">
+                        <label for="quiz-answer3-4">&lt;!-- This is a comment --&gt;</label><br>
+                        <input type="radio" name="quiz-answer-4" value="''' This is a comment '''" id="quiz-answer4-4">
+                        <label for="quiz-answer4-4">''' This is a comment '''</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="quiz-questions">
+                <p>5. What does the 'in' keyword do in Python?</p>
+                <div class="answers">
+                    <form id="quiz-form-5">
+                        <input type="radio" name="quiz-answer-5" value="Checks if a value is not present in a list" id="quiz-answer1-5">
+                        <label for="quiz-answer1-5">Checks if a value is not present in a list</label><br>
+                        <input type="radio" name="quiz-answer-5" value="Checks if a value is present in a list" id="quiz-answer2-5">
+                        <label for="quiz-answer2-5"><span id="quiz-correct-answer-"><span id="quiz-correct-answer-3"></span>Checks if a value is present in a list</label><br>
+                        <input type="radio" name="quiz-answer-5" value="Assigns a value to a variable" id="quiz-answer3-5">
+                        <label for="quiz-answer3-5">Assigns a value to a variable</label><br>
+                        <input type="radio" name="quiz-answer-5" value="Performs integer division" id="quiz-answer4-5">
+                        <label for="quiz-answer4-5">Performs integer division</label><br>
+                    </form>
+                </div>
             </div>
             <div class="test-btns">
-                <button id="test-reset-btn">Reset All</button>
-                <button id="test-submit-btn">Submit Test</button>
+                <button class="next-btn" id="exit-quiz-btn">Exit Quiz</button>
+                <button class="next-btn" id="quiz-reset-btn">Reset All</button>
+                <button class="next-btn" id="quiz-submit-btn">Submit Quiz</button>
             </div>
-        </section>
+            <div id="quiz-result"></div>
+        </div>
+        <div class="test-container wide-box center-content content-box" id="test-container" style="display: none;">
+            <h3>Test</h3>
+            <div id="test-questions">
+                <p>1. What is the result of this statement:</p>
+                <p>print("Hello!")</p>
+                <div class="answers">
+                    <form id="test-form-1">
+                        <input type="radio" name="test-answer-1" value="Hello!" id="test-answer1-1">
+                        <label for="test-answer1-1"><span id="test-correct-answer-1">Hello!</span></label><br>
+                        <input type="radio" name="test-answer-1" value="Error" id="test-answer2-1">
+                        <label for="test-answer2-1">Error</label><br>
+                        <input type="radio" name="test-answer-1" value="Hello" id="test-answer3-1">
+                        <label for="test-answer3-1">Hello</label><br>
+                        <input type="radio" name="test-answer-1" value="'Hello!'" id="test-answer4-1">
+                        <label for="test-answer4-1">"Hello!"</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="test-questions">
+                <p>2. Which are examples of valid Python data types?</p>
+                <div class="answers">
+                    <form id="test-form-2">
+                        <input type="radio" name="test-answer-2" value="str, int, dict" id="test-answer1-2">
+                        <label for="test-answer1-2"><span id="test-correct-answer-2">str, int, dict</span></label><br>
+                        <input type="radio" name="test-answer-2" value="frozen, binary, str" id="test-answer2-2">
+                        <label for="test-answer2-2">frozen, binary, str</label><br>
+                        <input type="radio" name="test-answer-2" value="memory, set, int" id="test-answer3-2">
+                        <label for="test-answer3-2">memory, set, int</label><br>
+                        <input type="radio" name="test-answer-2" value="tuple, octagon, square" id="test-answer4-2">
+                        <label for="test-answer4-2">tuple, octagon, square</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="test-questions">
+                <p>3. What does the 'len()' function do in Python?</p>
+                <div class="answers">
+                    <form id="test-form-3">
+                        <input type="radio" name="test-answer-3" value="Returns the length of a string" id="test-answer1-3">
+                        <label for="test-answer1-3"><span id="test-correct-answer-3">Returns the length of a string</span></label><br>
+                        <input type="radio" name="test-answer-3" value="Returns the largest value in a list" id="test-answer2-3">
+                        <label for="test-answer2-3">Returns the largest value in a list</label><br>
+                        <input type="radio" name="test-answer-3" value="Returns the smallest value in a list" id="test-answer3-3">
+                        <label for="test-answer3-3">Returns the smallest value in a list</label><br>
+                        <input type="radio" name="test-answer-3" value="Returns the type of a variable" id="test-answer4-3">
+                        <label for="test-answer4-3">Returns the type of a variable</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="test-questions">
+                <p>4. What is the correct syntax for a conditional statement in Python?</p>
+                <div class="answers">
+                    <form id="test-form-4">
+                        <input type="radio" name="test-answer-4" value="if (condition):" id="test-answer1-4">
+                        <label for="test-answer1-4"><span id="test-correct-answer-4">if (condition):</span></label><br>
+                        <input type="radio" name="test-answer-4" value="when (condition):" id="test-answer2-4">
+                        <label for="test-answer2-4">when (condition):</label><br>
+                        <input type="radio" name="test-answer-4" value="for (condition):" id="test-answer3-4">
+                        <label for="test-answer3-4">for (condition):</label><br>
+                        <input type="radio" name="test-answer-4" value="unless (condition):" id="test-answer4-4">
+                        <label for="test-answer4-4">unless (condition):</label><br>
+                    </form>
+                </div>
+            </div>
+            <div id="test-questions">
+                <p>5. How do you create a new list in Python?</p>
+                <div class="answers">
+                    <form id="test-form-5">
+                        <input type="radio" name="test-answer-5" value="[ ]" id="test-answer1-5">
+                        <label for="test-answer1-5"><span id="test-correct-answer-5">[ ]</span></label><br>
+                        <input type="radio" name="test-answer-5" value="{ }" id="test-answer2-5">
+                        <label for="test-answer2-5">{ }</label><br>
+                        <input type="radio" name="test-answer-5" value="( )" id="test-answer3-5">
+                        <label for="test-answer3-5">( )</label><br>
+                        <input type="radio" name="test-answer-5" value="< >" id="test-answer4-5">
+                        <label for="test-answer4-5">&lt; &gt;</label><br>
+                    </form>
+                </div>
+            </div>
+            <div class="test-btns">
+                <button class="next-btn" id="exit-test-btn">Exit Test</button>
+                <button class="next-btn" id="test-reset-btn">Reset All</button>
+                <button class="next-btn" id="test-submit-btn">Submit Test</button>
+            </div>
+            <div id="test-result"></div>
+        </div>
+        
     </main>
     <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
     <script src="scripts/script.js"></script>
