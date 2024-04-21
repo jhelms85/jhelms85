@@ -1,0 +1,24 @@
+{
+    "copyrightText": "Designed by: <a href='https://helmswebsolutions.com/'>Helms Web Solutions</a> &copy;2024, <a href='https://www.freecodecamp.org/certification/JaredHelms/responsive-web-design'>Certified in RWD</a>, and <a href='https://www.freecodecamp.org/certification/JaredHelms/javascript-algorithms-and-data-structures-v8'>Certified in JS</a>.",
+    "validationLinks": [
+      {
+        "id": "validation_link_html",
+        "src": "images/button_validation_html5.png",
+        "href": "https://validator.w3.org/check?uri=referer",
+        "alt": "Valid HTML!"
+      },
+      {
+        "id": "validation_link_css",
+        "src": "images/button_validation_css.png",
+        "href": "https://jigsaw.w3.org/css-validator/check/referer",
+        "alt": "Valid CSS!"
+      },
+      {
+        "id": "validation_link_wcag",
+        "src": "images/button_validation_wcag.png",
+        "href": "https://wave.webaim.org/report#/https://webpages.charlotte.edu/jhelms85/itis3135/hobby/index.html",
+        "alt": "Valid WCAG!"
+      }
+    ]
+  }
+  

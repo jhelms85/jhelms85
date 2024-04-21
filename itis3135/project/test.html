@@ -11,7 +11,16 @@
     <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
-    <header class="page-header planning"><div data-include="components/header.html"></div></header>
+    <div class="nav-bar-container">
+        <div class="logo">
+            <img src="images/company_logo.png" alt="Company Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul id="menu-links" class="links">
+                <!-- Navigation links added here dynamically -->
+            </ul>
+        </nav>
+    </div>
     <main class="main-content">
         <section class="section-planning" id="test-top" style="display: block;">
             <div class="center-content planning">
@@ -166,17 +175,17 @@
                 </div>
             </div>
             <div id="test-questions">
-                <p>3. What does the 'len()' function do in Python?</p>
+                <p>3. What is the proper way to import the Math module in Python?</p>
                 <div class="answers">
                     <form id="test-form-3">
-                        <input type="radio" name="test-answer-3" value="Returns the length of a string" id="test-answer1-3">
-                        <label for="test-answer1-3"><span id="test-correct-answer-3">Returns the length of a string</span></label><br>
-                        <input type="radio" name="test-answer-3" value="Returns the largest value in a list" id="test-answer2-3">
-                        <label for="test-answer2-3">Returns the largest value in a list</label><br>
-                        <input type="radio" name="test-answer-3" value="Returns the smallest value in a list" id="test-answer3-3">
-                        <label for="test-answer3-3">Returns the smallest value in a list</label><br>
-                        <input type="radio" name="test-answer-3" value="Returns the type of a variable" id="test-answer4-3">
-                        <label for="test-answer4-3">Returns the type of a variable</label><br>
+                        <input type="radio" name="test-answer-3" value="import numbers" id="test-answer1-3">
+                        <label for="test-answer1-3">import numbers</label><br>
+                        <input type="radio" name="test-answer-3" value="Math.import" id="test-answer2-3">
+                        <label for="test-answer2-3">Math.import</label><br>
+                        <input type="radio" name="test-answer-3" value="import math" id="test-answer3-3">
+                        <label for="test-answer3-3"><span id="test-correct-answer-3">import math</span></label><br>
+                        <input type="radio" name="test-answer-3" value="from python import" id="test-answer4-3">
+                        <label for="test-answer4-3">from python import</label><br>
                     </form>
                 </div>
             </div>

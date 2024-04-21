@@ -11,13 +11,35 @@
     <link rel="manifest" href="images/site.webmanifest">
 </head>
 <body>
-    <header class="page-header planning"><div data-include="components/header.html"></div></header>
+    <div class="nav-bar-container">
+        <div class="logo">
+            <img src="images/company_logo.png" alt="Company Logo" width="50" height="50">
+        </div>
+        <nav>
+            <ul id="menu-links" class="links">
+                <!-- Navigation links added here dynamically -->
+            </ul>
+        </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
+    </div>
+    
     <main class="main-content">
         <div class="center-content">
             <section class="intro-section">
                 <h1>Welcome to JH Programming Lessons</h1>
                 <p>Begin your journey into the world of Python programming with our comprehensive lessons.</p>
                 <p>Whether you're a complete beginner or looking to advance your skills, we have something for everyone.</p>
+            </section>
+            <section class="python-overview content-box center-content">
+                <h2>Python Overview</h2>
+                <p>Python is a popular, high-level programming language known for its simplicity and readability. To get started with Python, you'll need to install it on your computer. Here's how:</p>
+                <ol>
+                    <li>Go to the official Python website: <a href="https://www.python.org/downloads/">Python Downloads</a></li>
+                    <li>Choose the appropriate installer for your operating system (Windows, macOS, or Linux)</li>
+                    <li>Download the installer and run it</li>
+                    <li>Follow the installation instructions provided by the installer</li>
+                </ol>
+                <p>Once Python is installed, you can start writing and running Python code on your computer.</p>
             </section>
             <section class="course-overview content-box center-content">
                 <h2>Course Overview</h2>
@@ -32,22 +54,11 @@
             <section class="course-overview content-box center-content">
                 <h2>Learning Objectives</h2>
                 <p>By the end of this course, you will:</p>
-                <ul>
-                    <li>Understand fundamental programming concepts</li>
-                    <li>Have a solid foundation in the Python programming language</li>
-                    <li>Be able to solve problems using programming techniques</li>
+                <ul style="text-align: left;">
+                    <li>- Understand fundamental programming concepts</li>
+                    <li>- Have a solid foundation in the Python programming language</li>
+                    <li>- Be able to solve problems using programming techniques</li>
                 </ul>
-            </section>
-            <section class="python-overview content-box center-content">
-                <h2>Python Overview</h2>
-                <p>Python is a popular, high-level programming language known for its simplicity and readability. To get started with Python, you'll need to install it on your computer. Here's how:</p>
-                <ol>
-                    <li>Go to the official Python website: <a href="https://www.python.org/downloads/">Python Downloads</a></li>
-                    <li>Choose the appropriate installer for your operating system (Windows, macOS, or Linux)</li>
-                    <li>Download the installer and run it</li>
-                    <li>Follow the installation instructions provided by the installer</li>
-                </ol>
-                <p>Once Python is installed, you can start writing and running Python code on your computer.</p>
             </section>
         </div>
         <div class="center-content">
@@ -55,8 +66,10 @@
             <button class="next-btn" onclick="window.location.href = 'overview.html';">Next</button>
         </div>
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer planning">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons planning"></div>
+    </footer>
     <script src="scripts/script.js"></script>
-    <script src="scripts/HTMLInclude.min.js"></script>
 </body>
 </html>

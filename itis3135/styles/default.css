@@ -151,7 +151,7 @@ body {
     margin-right: 50px;
 }
 
-.input-entry, #new-salary-input {
+.input-entry, .new-salary-input {
     margin-bottom: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -219,6 +219,10 @@ body {
 .project-overview ul {
     list-style: none;
     text-align: left;
+}
+
+.review_screenshot {
+    width: 65%;
 }
 
 .salary-select {

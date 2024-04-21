@@ -16,6 +16,8 @@
         { "url": "interactiveDrawing.html", "text": "Interactive Drawing" },
         { "url": "slideshow.html", "text": "Slideshow" },
         { "url": "project/index.html", "text": "Course Project" },
+        { "url": "review1.html", "text": "Review 1" },
+        { "url": "review2.html", "text": "Review 2" },
         { "url": "https://webpages.charlotte.edu/jhelms85/", "text": "Back to Main Site" }
     ],
     "secondaryLinks": [

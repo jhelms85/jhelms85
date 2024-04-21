@@ -2,8 +2,28 @@ const quizURL = 'components/questions.json';
 const testURL = 'components/questions.json';
 
 /* Functions for all pages */
+document.addEventListener('DOMContentLoaded', loadMenu);
+document.addEventListener('DOMContentLoaded', loadFooter);
+
+function loadMenu() {
+    fetch('components/header.json')
+        .then(response => response.json())
+        .then(data => {
+            const menuLinks = document.getElementById('menu-links');
+            data.links.forEach(link => {
+                const listItem = document.createElement('li');
+                const anchor = document.createElement('a');
+                anchor.href = link.url;
+                anchor.textContent = link.text;
+                listItem.appendChild(anchor);
+                menuLinks.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error('Error loading menu:', error));
+}
+
 function removeCSS() {
-    var confirmed = window.confirm("Are you sure you want to remove the styling? This is useful if you are having compatability issues. Refresh the page to restore the styling.");
+    var confirmed = window.confirm("Are you sure you want to remove the styling? This is useful if you are having compatibility issues. Refresh the page to restore the styling.");
     if (!confirmed) {
         return;
     }
@@ -12,6 +32,32 @@ function removeCSS() {
     stylesheets.forEach(function(stylesheet) {
         stylesheet.disabled = true;
     });
+}
+
+function loadFooter() {
+    fetch('components/footer.json')
+        .then(response => response.json())
+        .then(data => {
+            const copyrightTag = document.querySelector('.copyright-tag');
+            copyrightTag.innerHTML = data.copyrightText;
+
+            const validationButtons = document.querySelector('.validation-buttons');
+            data.validationLinks.forEach(link => {
+                const anchor = document.createElement('a');
+                anchor.id = link.id;
+                anchor.href = link.href;
+                anchor.style.textDecoration = 'none';
+                const img = document.createElement('img');
+                img.src = link.src;
+                img.alt = link.alt;
+                img.style.border = '0';
+                img.width = '88';
+                img.height = '31';
+                anchor.appendChild(img);
+                validationButtons.appendChild(anchor);
+            });
+        })
+        .catch(error => console.error('Error loading footer:', error));
 }
 
 /* Functions for index.html page */
@@ -40,8 +86,6 @@ function validateInput() {
         congratsDiv.style.display = "none";
     }
 }
-
-/* Functions for documentation.html page */
 
 /* Functions for test.html page */
 
@@ -76,7 +120,7 @@ window.onload = function() {
 
     exitTestBtn.addEventListener('click', function() {
         if (confirm("Are you sure you want to exit the test?")) {
-            window.location.href = 'quiz.html';
+            window.location.href = 'test.html';
         }
     });
 

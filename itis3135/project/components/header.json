@@ -1,0 +1,14 @@
+{
+    "logo": "images/company_logo.png",
+    "links": [
+      {"text": "Home", "url": "index.html"},
+      {"text": "Overview", "url": "overview.html"},
+      {"text": "Syntax", "url": "syntax.html"},
+      {"text": "Basics", "url": "basics.html"},
+      {"text": "Advanced", "url": "advanced.html"},
+      {"text": "Documentation", "url": "documentation.html"},
+      {"text": "Test/Quiz", "url": "test.html"}
+    ],
+    "removeCssImageUrl": "images/no-css.png"
+  }
+  
