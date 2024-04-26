@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JH Programming Lessons | Overview</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,20 +20,21 @@
                 <!-- Navigation links added here dynamically -->
             </ul>
         </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
     </div>
-    <main class="main-content">
-        <div class="overview planning side-by-side center-content">
+    <main>
+        <div class="center-content">
             <h1>Python Overview</h1>
-            <div class="content-box center-content python-preview planning" style="width: 1200px;">
+            <div class="large-div center-content">
                 <div class="side-by-side">
-                    <div class="what-python content-box">
+                    <div class="center-content content-div">
                         <h2>What is python?</h2>
                         <p>Python is a programming language that is widely recognized and renoun for its simplicity and reliability.
                             Don't let this fool you, while simplistic, Python is extremely functional. It is used in a variety of fields 
                              including web-development, data science/analysis, artificial intelligence, and so much more. 
                         </p>
                     </div>
-                    <div class="why-python content-box">
+                    <div class="center-content content-div">
                         <h2>Why learn Python?</h2>
                         <p>Python was designed to be quite readable and has a relatively user friendly syntax. It reads very similar to 
                             the english language. Because of this, it allows for more robust commands to be executed in fewer lines of code
@@ -42,11 +43,11 @@
                     </div>
                 </div>
             </div>
-            <div class="wide-box">
+            <div class="large-div center-content">
                 <h3>But first, what is an IDE?</h3>
                 <p>An IDE, or Integrated Development Environment, is a software application that provides comprehensive facilities to programmers for software development.</p>
                 <p>It typically consists of a code editor, a compiler or interpreter, build automation tools, and debugger, all integrated into a single user interface.</p>
-                <div class="content-box center-content">
+                <div>
                     <p>Using an IDE offers several advantages:</p>
                 <ul>
                     <li>Enhanced productivity due to features like syntax highlighting, code completion, and automated refactoring.</li>
@@ -55,7 +56,7 @@
                     <li>Support for various programming languages and frameworks.</li>
                 </ul>
                 </div>
-                <div class="content-box center-content">
+                <div class="med-div content-div">
                     <p>Popular IDEs for Python development include:</p>
                 <ul>
                     <li><a href="https://code.visualstudio.com/">Visual Studio Code</a></li>
@@ -66,8 +67,8 @@
                 <p>Ultimately, the choice of IDE depends on individual preferences and requirements. It's a good idea to explore different IDEs to find the one that best suits your workflow and coding style.</p>
             </div>
             
-            <div class="container planning">
-                <div class="python-preview centered-div planning">
+            <div>
+                <div class="center-content">
                     <h2>Lets take a quick look at some Python!</h2>
                     <div class="code-container center-content">
                         <code class="code-block planning">
@@ -85,17 +86,17 @@
                     </div>
                     <div class="code-breakdown-btn">
                         <!-- Possibly make prev btn a reset btn -->
-                        <button class="previous-btn" id="previous-btn">Previous</button>
+                        <button class="next-btn" id="previous-btn">Previous</button>
                         <button class="next-btn" id="next-btn">Next</button>
                     </div>
-                    <div class="spacer">
-                        <p class="center-content planning">Don't worry if some of this does not make sense to you right now, we will most certainly go into detail throughout this material to develop a solid understanding of all of these sections of code!</p>
-                        <p class="center-content planning" style="font-size: 0.7rem;">Quick note: The colors on the text are for visual purposes, your programming application will most likely do this, but the colors will most certainly differ.</p>
+                    <div>
+                        <p class="large-div content-div center-content">Don't worry if some of this does not make sense to you right now, we will most certainly go into detail throughout this material to develop a solid understanding of all of these sections of code!</p>
+                        <p class="center-content" style="font-size: 0.7rem;">Quick note: The colors on the text are for visual purposes, your programming application will most likely do this, but the colors will most certainly differ.</p>
                     </div>
                 </div>
             </div>
-            <div class="remember-container  centered-div planning" style="width: 900px">
-                <h2 style="color: #64c0a6">Remember:</h2>
+            <div class="centered-div" style="width: 900px">
+                <h2 style="color: #ffee00">Remember:</h2>
                 <p style="text-align: left;">The goal here is to get a basic overview and begin a programming <i>journey</i>, not become an expert immediately.
                     You will experience ups and downs as does every programmer that has ever existed, and will exist. It's only when mistakes are 
                      made, that you really begin learning. There are many approaches to solving a problem and going through problems will show you 
@@ -104,23 +105,21 @@
             </div>
         </div>
         <div class="center-content content-box planning">
-            <div>
+            <div class="center-content">
                 <p>Click the button below to get started with some Python syntax!</p>
-                <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'syntax.html';">Get Started</button>
+                <button class="next-btn" onclick="window.location.href = 'syntax.html';">Get Started</button>
             </div>
         </div>
-        <div class="side-by-side planning">
-            <div class="content-box planning" style="width: 300px;">
+        <div class="wide-div side-by-side">
+            <div class="content-div" style="width: 300px;">
                 <h3>Article!</h3>
                 <p>Here is a fantastic article giving a basic overview of Python, the benefits of learning it, and more resources!</p>
                 <div class="center-content">
-                    <div class="spacer"></div>
                     <a href="https://www.codecademy.com/article/what-is-python" class="previous-btn">What is Python?</a>
-                    <div class="spacer"></div>
                     <p><small><i>Article provided by: </i><a href="">Codeacademy</a>.</small></p>
                 </div>
             </div>
-            <div class="content-box planning" style="width: 800px;">
+            <div class="content-div" style="width: 800px;">
                 <h3>Course Objectives:</h3>
                 <p>By the end of this course, you will have a solid foundation to begin your Python programming journey. You will learn 
                     a multitude of things that will get you set off on the right foot to begin creating programs and solving problems using
@@ -135,9 +134,9 @@
                     <li>6. A test/quiz section to review and practice your programming skills.</li>
                 </ul>
             </div>
-            <div class="content-box planning" style="width: 350px;">
+            <div class="content-div" style="width: 350px;">
                 <h3>Additional Learning Resources:</h3>
-                <div class="center-content">
+                <div>
                     <ul>
                         <li><a href="https://www.python.org/">Python.org</a></li>
                         <li><a href="https://www.w3schools.com/python/default.asp">W3 Schools</a></li>
@@ -151,7 +150,10 @@
             </div>
         </div>
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons"></div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>

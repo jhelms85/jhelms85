@@ -90,8 +90,8 @@ function validateInput() {
 /* Functions for test.html page */
 
 window.onload = function() {
-    const quizBtn = document.querySelector('.quiz-test-btns .next-btn:first-child');
-    const testBtn = document.querySelector('.quiz-test-btns .next-btn:last-child');
+    const quizBtn = document.getElementById('quizBtn');
+    const testBtn = document.getElementById('testBtn');
     const quizSection = document.getElementById('test-top');
     const quizContainer = document.getElementById('quiz-container');
     const testContainer = document.getElementById('test-container');

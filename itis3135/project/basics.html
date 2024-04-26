@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JH Programming Lessons | Home</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,16 +20,17 @@
                 <!-- Navigation links added here dynamically -->
             </ul>
         </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
     </div>
-    <main class="main-content">
+    <main class="center-content">
         <h1>Python Basics</h1>
-        <section class="data-types center-content section-planning" id="data-types">
-            <div class="wide-box planning">
+        <section class="large-div center-content data-types" id="data-types">
+            <div class="center-content">
                 <h2>Data Types</h2>
                 <p>Now that we've looked into some syntax, the next thing we will dive into is some basics. The first thing we will cover here will be Python data types.</p>
                 <p>There are numerous built in data types, let's take a look at them.</p>
-                <div class="wide-box side-by-side planning">
-                    <div class="center-content planning">
+                <div class="wide-box side-by-side">
+                    <div class="center-content">
                         <table>
                             <caption>Basic Data Types</caption>
                             <tr>
@@ -81,11 +82,11 @@
                     </div>
                 </div>
             </div>
-            <div class="wide-box">
+            <div class="wide-box center-content">
                 <p>Again, lets break it down.</p>
                 <!-- Fix formatting, centering, all that -->
                 <!-- Remove all style tags and id's and set them in divs that match the id's to hide/show them -->
-                <div class="code-breakdown wide-box planning">
+                <div class="code-breakdown wide-div center-content">
                     <h3 id="str-breakdown">Text</h3>
                     <p id="str-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">str</span></p><p>type used to represent sequences of characters, typically text, enclosed within single quotes ('..') or double quotes ("..").</p>
                     <h3 id="number-breakdown">Number</h3>
@@ -124,8 +125,8 @@
                 <p>The data type of 'str' will be assigned in this case, since a str value was used.</p>
             </div>
         </section>
-        <section class="section-planning">
-            <div class="wide-box center-content planning">
+        <section>
+            <div class="large-div center-content">
                 <h2>Functions</h2>
                 <p>In Python, functions are a block of reusable code that performs a specific task. They allow you to break down your program into smaller, manageable parts, making your code more organized and easier to understand.</p>
                 
@@ -158,45 +159,32 @@
             </div>
         </section>
         
-        <section class="section-planning" style="display: block;">
-            <div class="wide-box center-content planning">
+        <section class="center-content" style="display: block;">
+            <div class="wide-div center-content">
                 <h2>Basic Math Calculations</h2>
                 <p>Next, we will get into some basic built in Python math functions, addition, subtraction, division, multiplication, remainder.</p>
                 <p>Python can perform many calculations for you! This is important because calculations will also be used in many other important functions you may use, such a looping! We will cover this a little later on in the "Advanced" section of this course.</p>
                 <p>Let's go through some quick examples!</p>
             </div>
-            <div class="wide-box content-box center-content">
+            <div class="wide-div center-content">
                 <h3>Addition and Subtraction</h3>
                 <p>If you were to type:</p>
-                <div class="spacer"></div>
                 <code class="code-input">print(5 + 2)</code>
-                <div class="spacer"></div>
                 <p>You would get this returned:</p>
-                <div class="spacer"></div>
                 <code class="code-input">7</code>
-                <div class="spacer"></div>
                 <p>Pretty simple right? Well let's see how variables would work in this instance. For the input:</p>
-                <div class="spacer"></div>
                 <div class="code-input center-content" style="height: fit-content;">
                     <code>x = 5</code><br>
                     <code>print(x + 2)</code>
                 </div>
-                <div class="spacer"></div>
                 <p>You would get this returned:</p>
-                <div class="spacer"></div>
                 <code class="code-input">7</code>
-                <div class="spacer"></div>
                 <p>So as you can see, by declaring the variable, you can do the same calculations. By declaring them this way though, you can easily use the same variables for multiple calculations, this is especially useful when you are dealing with much larger numbers.</p>
                 <p>As for subtraction, well it works the exact same way.</p>
-                <div class="spacer"></div>
                 <code class="code-input">print(8 - 2)</code>
-                <div class="spacer"></div>
                 <p>You would get this returned:</p>
-                <div class="spacer"></div>
                 <code class="code-input">6</code>
-                <div class="spacer"></div>
                 <p>That is really all there is to it with addition and subtraction, with Python it is extremely easy to perform these calculations.</p>
-                <div class="spacer"></div>
             </div>
         </section>
         <section class="section-planning" style="display: block;">
@@ -209,58 +197,45 @@
             <div class="wide-box content-box center-content">
                 <h3>Multiplication</h3>
                 <p>To perform multiplication in Python, use the <code>*</code> operator:</p>
-                <div class="spacer"></div>
                 <code class="code-input">print(3 * 4)</code>
-                <div class="spacer"></div>
                 <p>This will output:</p>
-                <div class="spacer"></div>
                 <code class="code-input">12</code>
-                <div class="spacer"></div>
                 <p>Similarly, you can use variables for multiplication:</p>
-                <div class="spacer"></div>
                 <div class="code-input center-content" style="height: fit-content;">
                     <code>y = 3</code><br>
                     <code>print(y * 4)</code>
                 </div>
-                <div class="spacer"></div>
                 <p>Which will also result in:</p>
-                <div class="spacer"></div>
                 <code class="code-input">12</code>
-                <div class="spacer"></div>
             </div>
             <div class="wide-box content-box center-content">
                 <h3>Division</h3>
                 <p>Division in Python can be performed using the <code>/</code> operator:</p>
-                <div class="spacer"></div>
                 <code class="code-input">print(10 / 2)</code>
-                <div class="spacer"></div>
                 <p>Which yields:</p>
-                <div class="spacer"></div>
                 <code class="code-input">5.0</code>
-                <div class="spacer"></div>
                 <p>It's important to note that division in Python results in a floating-point number.</p>
             </div>
             <div class="wide-box content-box center-content">
                 <h3>Remainder</h3>
                 <p>To find the remainder of a division operation, you can use the modulus operator <code>%</code>:</p>
-                <div class="spacer"></div>
                 <code class="code-input">print(10 % 3)</code>
-                <div class="spacer"></div>
                 <p>This gives:</p>
-                <div class="spacer"></div>
                 <code class="code-input">1</code>
-                <div class="spacer"></div>
                 <p>The remainder operator is particularly useful in tasks like checking for divisibility or cycling through values.</p>
             </div>
         </section>
         <div class="center-content">
             <p>Awesome! Let's continue.</p>
             <div class="center-content">
-                <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'advanced.html';">Advanced</button>
+                <button class="next-btn" onclick="window.location.href = 'advanced.html';">Advanced</button>
             </div>
         </div>
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons"></div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>

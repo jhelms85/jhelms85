@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JH Programming Lessons | Tests</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,21 +20,22 @@
                 <!-- Navigation links added here dynamically -->
             </ul>
         </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
     </div>
-    <main class="main-content">
-        <section class="section-planning" id="test-top" style="display: block;">
-            <div class="center-content planning">
+    <main>
+        <section id="test-top" style="display: block;">
+            <div class="large-div center-content center-item">
                 <h1>Test/Quiz</h1>
                 <p>Let's put what you have learned to the test!</p>
-                <div class="side-by-side planning">
-                    <div class="content-box planning">
+                <div class="side-by-side">
+                    <div class="content-div">
                         <h3>Quiz</h3>
                         <p>The quiz will consist of 5 questions covering the topics learned in this course. You can take this as much as you want to improve proficiency.</p>
                         <p>Do your best to answer all of the questions! You'll receive immediate feedback upon completion.</p>
                         <div class="spacer"></div>
                         <p>Don't hesitate to look back over the course as needed to clairify topics you may have questions about.</p>
                     </div>
-                    <div class="content-box planning">
+                    <div class="content-div">
                         <h3>Test</h3>
                         <p>The test will assess your understanding of the concepts learned throughout each of the sections:</p>
                         <ul>
@@ -49,13 +50,13 @@
                         <p>Good luck!</p>
                     </div>
                 </div>
-                <div class="quiz-test-btns">
-                    <button class="next-btn">Start Quiz</button>
-                    <button class="next-btn">Start Test</button>
+                <div class="side-by-side">
+                    <button id="quizBtn" class="next-btn">Start Quiz</button>
+                    <button id="testBtn" class="next-btn">Start Test</button>
                 </div>
             </div>
         </section>
-        <div class="quiz-container wide-box center-content content-box" id="quiz-container" style="display: none;">
+        <div class="med-div center-item" id="quiz-container" style="display: none;">
             <h3>Quiz</h3>
             <div id="quiz-questions">
                 <p>1. What is the result of this statement:</p>
@@ -141,7 +142,7 @@
             </div>
             <div id="quiz-result"></div>
         </div>
-        <div class="test-container wide-box center-content content-box" id="test-container" style="display: none;">
+        <div class="med-div center-item" id="test-container" style="display: none;">
             <h3>Test</h3>
             <div id="test-questions">
                 <p>1. What is the result of this statement:</p>
@@ -228,7 +229,10 @@
         </div>
         
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons"></div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>

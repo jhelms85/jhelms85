@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JH Programming Lessons | Advanced</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,36 +20,34 @@
                 <!-- Navigation links added here dynamically -->
             </ul>
         </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
     </div>
-    <main class="main-content">
+    <main class="center-content">
         <!-- Set display of all but first section to none -->
         <h1>Advanced Python</h1>
-        <div class="planning">
-            <section class="section-planning" id="hello-world">
-                <div class="center-content wide-box planning">
+        <div>
+            <section id="hello-world">
+                <div class="center-item center-content large-div">
                     <h2>Let's code!</h2>
                     <p>You have learned quite a bit about Python thus far, let's put some of this into action and write your first program!</p>
-                    <div class="spacer"></div>
                     <p>Let's start with a classic, you'll be hard pressed to find a programmer who started with something other than this.</p>
-                    <div class="spacer"></div>
                     <p>In the input box, type</p>
                     <code>print("Hello, World!")</code>
                     <p>exactly as shown, then press run!</p>
-                    <div class="spacer"></div>
                     <label for="userInput">Your code:</label>
                     <div style="margin-top: 10px;"></div>
                     <input class="code-input" type="text" id="userInput" name="userInput" placeholder='print("Hello, World!")'>
-                    <button class="previous-btn" onclick="validateInput()">Run</button>
+                    <button class="next-btn" onclick="validateInput()">Run</button>
                     <div class="spacer"></div>
                     <div class="code-output center-content" id="first-code-output" style="display: none;"></div>
                     <div class="spacer"></div>
-                    <div class="congrats-div" id="congrats-div" style="display: none;">
+                    <div class="content-div" id="congrats-div" style="display: none;">
                         <h3>Congratulations!</h3>
                         <p>You have successfully written your first program! Let's make it a little more challenging!</p>
                     </div>
                 </div>
             </section>
-            <div class="wide-box content-box center-content">
+            <div class="large-div center-item">
                 <h3>Import Statement</h3>
                 <p>The import statement in Python is used to include external modules or packages into your program. Modules are Python files containing functions, classes, and variables that can be used in other Python files.</p>
                 <p>By importing modules, you can access their functionality and reuse code, saving time and effort in development.</p>
@@ -74,8 +72,8 @@
                 <div class="spacer"></div>
             </div>
             
-            <section class="section-planning" style="display: block;">
-                <div class="wide-box center-content planning">
+            <section style="display: block;">
+                <div class="large-div center-item">
                     <h2>Advanced Calculations</h2>
                     <p>I hope you love math!</p>
                     <p>Im kidding of course.. well kind of. As we previously learned, Python has tons of built in functions to do calculations for you!</p>
@@ -83,7 +81,7 @@
                     <p>Understanding these concepts will be beneficial as you progress in programming and data analysis.</p>
                     <p>Let's explore each of these concepts with examples!</p>
                 </div>
-                <div class="wide-box content-box center-content">
+                <div class="large-div center-item">
                     <h3>Mean, Median, Mode, and Range</h3>
                     <p>Python provides built-in functions to calculate statistical measures like mean, median, mode, and range.</p>
                     <ul>
@@ -118,7 +116,7 @@
                     </div>
                     <div class="spacer"></div>
                 </div>
-                <div class="wide-box content-box center-content">
+                <div class="large-div center-content">
                     <h3>Randomization</h3>
                     <p>Python's random module allows you to work with random numbers and perform various randomization tasks.</p>
                     <p>Some common randomization tasks include generating random integers, shuffling elements, and selecting random samples.</p>
@@ -148,12 +146,15 @@
             <div class="center-content">
                 <p>Go to Documentation:</p>
                 <div class="center-content">
-                    <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'documentation.html';">Go!</button>
+                    <button class="next-btn" onclick="window.location.href = 'documentation.html';">Go!</button>
                 </div>
             </div>
         </div>
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons"></div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JH Programming Lessons | Documentation</title>
-    <link rel="stylesheet" href="styles/default.css">
+    <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
@@ -20,9 +20,10 @@
                 <!-- Navigation links added here dynamically -->
             </ul>
         </nav>
+        <img id="remove-css-btn" class="no-css-btn" src="images/no-css.png" alt="Remove CSS image" width="90" height="50" onclick="removeCSS()">
     </div>
-    <main class="main-content">
-        <div class="wide-box center-content planning">
+    <main>
+        <div class="large-div center-item">
             <h2>Documentation</h2>
             <p>Documentation in programming refers to the written text or other forms of information that describe how software operates, how to use it, and how to modify it.</p>
             <p>Good documentation is crucial for understanding code, facilitating collaboration among developers, and ensuring the maintainability of software projects.</p>
@@ -41,7 +42,7 @@
                 understand its functionality but also serves as a valuable reference for yourself in the future. When writing documentation, consider your audience and provide explanations that are easy to understand, 
                     including usage examples and any relevant context. Additionally, keep your documentation up to date as your code evolves, ensuring that it remains accurate and helpful to users. By prioritizing documentation, you contribute to the overall quality and usability of your software projects.</p>
             <div class="spacer"></div>
-            <div class="center-content content-box">
+            <div class="center-item med-div content-div">
             <p>For more detailed information about Python and its libraries, you can refer to the official Python documentation:</p>
             <ul>
                 <li><a href="https://docs.python.org/">Python Documentation</a></li>
@@ -52,11 +53,14 @@
             <p>You have completed all of the main content!</p>
             <p>The next, and final step is the Test/Quiz section!</p>
             <div class="center-content">
-                <button class="code-breakdown-btn next-btn" onclick="window.location.href = 'test.html';">Go!</button>
+                <button class="next-btn" onclick="window.location.href = 'test.html';">Go!</button>
             </div>
         </div>
     </main>
-    <footer class="page-footer planning"><div data-include="components/footer.html"></div></footer>
+    <footer class="page-footer">
+        <p class="copyright-tag"></p>
+        <div class="validation-buttons"></div>
+    </footer>
     <script src="scripts/script.js"></script>
     <script src="scripts/HTMLInclude.min.js"></script>
 </body>
