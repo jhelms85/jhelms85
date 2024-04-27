@@ -81,7 +81,7 @@
                     <p>Understanding these concepts will be beneficial as you progress in programming and data analysis.</p>
                     <p>Let's explore each of these concepts with examples!</p>
                 </div>
-                <div class="large-div center-item">
+                <div class="large-div">
                     <h3>Mean, Median, Mode, and Range</h3>
                     <p>Python provides built-in functions to calculate statistical measures like mean, median, mode, and range.</p>
                     <ul>
@@ -92,53 +92,65 @@
                     </ul>
                     <p>Let's see how to calculate these:</p>
                     <div class="spacer"></div>
-                    <div class="centered-code">
+                    <div class="centered-code content-div">
                         <h3>Mean</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         numbers = [2, 3, 5, 7, 11, 13]
                         mean = sum(numbers) / len(numbers)
                         print("Mean:", mean)</code>
+                        </pre>
                         <h3>Median</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         sorted_numbers = sorted(numbers)
                         n = len(sorted_numbers)
                         median = sorted_numbers[n // 2] if n % 2 != 0 else (sorted_numbers[n // 2 - 1] + sorted_numbers[n // 2]) / 2
                         print("Median:", median)</code>
+                        </pre>
                         <h3>Mode</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         from collections import Counter
                         mode = Counter(numbers).most_common(1)[0][0]
                         print("Mode:", mode)</code>
+                        </pre>
                         <h3>Range</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         range_val = max(numbers) - min(numbers)
                         print("Range:", range_val)</code>
+                        </pre>
                     </div>
                     <div class="spacer"></div>
                 </div>
-                <div class="large-div center-content">
+                <div class="large-div">
                     <h3>Randomization</h3>
                     <p>Python's random module allows you to work with random numbers and perform various randomization tasks.</p>
                     <p>Some common randomization tasks include generating random integers, shuffling elements, and selecting random samples.</p>
                     <p>Let's look at some examples of randomization:</p>
                     <div class="spacer"></div>
-                    <div class="centered-code">
+                    <div class="centered-code content-div">
                         <h3>Generating a Random Integer</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         import random
                         random_number = random.randint(1, 100)
                         print("Random number:", random_number)</code>
-                
+                    </pre>
                         <h3>Shuffling a List</h3>
-                        <code class="code-input">
+                        <code>
+                        <pre>
                         my_list = [1, 2, 3, 4, 5]
                         random.shuffle(my_list)
                         print("Shuffled list:", my_list)</code>
-                
+                        </pre>
                         <h3>Selecting a Random Element from a List</h3>
-                        <code class="code-input">
+                        <pre>
+                        <code>
                         random_element = random.choice(my_list)
                         print("Random element:", random_element)</code>
+                        </pre>
                     </div>
                     <div class="spacer"></div>
                 </div>

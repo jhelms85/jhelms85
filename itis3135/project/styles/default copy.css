@@ -111,8 +111,9 @@ h3 {
 }
 
 .large-div {
-    width: 850px;
+    width: 1000px;
     margin-top: 25px;
+    padding: 10px;
 }
 
 .wide-div {
@@ -132,6 +133,12 @@ h3 {
     background-color: #000000;
     color: #FF9A56;
     border: 1px solid #FF5714;
+}
+
+.next-btn:hover {
+    cursor: pointer;
+    color: white;
+    border: 1px solid #f0ff64;
 }
 
 .page-footer {
@@ -158,12 +165,12 @@ h3 {
 }
 
 .code-block {
-    padding-top: 10px;
-    padding-right: 20px;
-    padding-left: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
     font-size: 15px;
     background-color: #000000;
+    border: 1px solid white;
 }
 
 .code-breakdown {
@@ -171,7 +178,7 @@ h3 {
     margin-bottom: 25px;
     margin-left: auto;
     margin-right: auto;
-    width: 650px;
+    width: 900px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

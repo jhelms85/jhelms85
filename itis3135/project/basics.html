@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>JH Programming Lessons | Home</title>
+    <title>JH Programming Lessons | Basics</title>
     <link rel="stylesheet" href="styles/default copy.css">
     <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -84,44 +84,39 @@
             </div>
             <div class="wide-box center-content">
                 <p>Again, lets break it down.</p>
-                <!-- Fix formatting, centering, all that -->
-                <!-- Remove all style tags and id's and set them in divs that match the id's to hide/show them -->
-                <div class="code-breakdown wide-div center-content">
-                    <h3 id="str-breakdown">Text</h3>
-                    <p id="str-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">str</span></p><p>type used to represent sequences of characters, typically text, enclosed within single quotes ('..') or double quotes ("..").</p>
+                <div class="wide-div content-div">
+                    <h3>Text</h3>
+                    <p><span class="data-type">str</span> - Type used to represent sequences of characters, typically text, enclosed within single quotes ('..') or double quotes ("..").</p>
                     <h3 id="number-breakdown">Number</h3>
-                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">int</span></p><p>type used to represent integers (whole numbers without decimals).</p>
-                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">float</span></p><p>type used to represent floating-point numbers (numbers with fractional parts).</p>
-                    <p id="number-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">complex</span></p><p>type used to represent complex numbers (numbers with a real and imaginary parts).</p>
+                    <p><span class="data-type">int</span> - Type used to represent integers (whole numbers without decimals).</p>
+                    <p><span class="data-type">float</span> - Type used to represent floating-point numbers (numbers with fractional parts).</p>
+                    <p><span class="data-type">complex</span> - Type used to represent complex numbers (numbers with a real and imaginary parts).</p>
                     <h3 id="bool-breakdown">Boolean</h3>
-                    <p id="bool-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bool</span></p><p>type used to represent boolean values, which can either be True or False.</p>
+                    <p><span class="data-type">bool</span> - Type used to represent boolean values, which can either be True or False.</p>
                     <h3 id="sequence-breakdown">Sequence</h3>
-                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">list</span></p><p>type used to represent ordered, mutable collections of items. Defined with square brackets [..].</p>
-                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">tuple</span></p><p>type used to represent ordered, immutable collections of items. Defined with parentheses (..).</p>
-                    <p id="sequence-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">range</span></p><p>type used to represent an immutable sequence of numbers. Generated using the built-in range() function.</p>
-                    <p id="sequence-breakdown" style="padding: 15px;">Note that in Python, when we say a data type is "mutable," it means that its contents can be changed after it's created. "Immutable" means that the data type's contents cannot be changed after creation. Lists are mutable, 
-                        meaning you can add, remove, or modify elements. Tuples, on the other hand, are immutable, meaning once created, their elements cannot be changed.
-                    </p>
+                    <p><span class="data-type">list</span> - Type used to represent ordered, mutable collections of items. Defined with square brackets [...].</p>
+                    <p><span class="data-type">tuple</span> - Type used to represent ordered, immutable collections of items. Defined with parentheses (...).</p>
+                    <p><span class="data-type">range</span> - Type used to represent an immutable sequence of numbers. Generated using the built-in range() function.</p>
+                    <p>Note that in Python, when we say a data type is "mutable," it means that its contents can be changed after it's created. "Immutable" means that the data type's contents cannot be changed after creation. Lists are mutable, meaning you can add, remove, or modify elements. Tuples, on the other hand, are immutable, meaning once created, their elements cannot be changed.</p>
                     <h3 id="binary-breakdown">Binary</h3>
-                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bytes</span></p><p>type used to represent an immutable sequence of bytes. Used to represent binary data. Defined with a prefix b'...'.</p>
-                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">bytearray</span></p><p>type used to represent a mutable sequence of bytes. Similar to bytes but can be modified after creation.</p>
-                    <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">memoryview</span></p><p>type used to represent a memoryview objects which allow Python code to access the internal data of an object that supports the buffer protocol without copying.</p>
+                    <p><span class="data-type">bytes</span> - Type used to represent an immutable sequence of bytes. Used to represent binary data. Defined with a prefix b'...'.</p>
+                    <p><span class="data-type">bytearray</span> - Type used to represent a mutable sequence of bytes. Similar to bytes but can be modified after creation.</p>
+                    <p><span class="data-type">memoryview</span> - Type used to represent a memoryview object which allows Python code to access the internal data of an object that supports the buffer protocol without copying.</p>
                     <h3 id="set-breakdown">Set</h3>
-                    <p id="set-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">set</span></p><p>type used to represent an unordered collection of unique elements. Defined with curly braces {...} or by using the set() constructor.</p>
-                    <p id="set-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">frozenset</span></p><p>type used to represent an immutable set. Similar to set but cannot be modified after creation.</p>
+                    <p><span class="data-type">set</span> - Type used to represent an unordered collection of unique elements. Defined with curly braces {...} or by using the set() constructor.</p>
+                    <p><span class="data-type">frozenset</span> - Type used to represent an immutable set. Similar to set but cannot be modified after creation.</p>
                     <h3 id="none-breakdown">None</h3>
-                    <p id="none-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">NoneType</span></p><p>type used to represent the absence of a value, often used as the return type of functions that don't explicitly return anything.</p>
+                    <p><span class="data-type">NoneType</span> - Type used to represent the absence of a value, often used as the return type of functions that don't explicitly return anything.</p>
                     <h3 id="mapping-breakdown">Mapping</h3>
-                    <p id="mapping-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">dict</span></p><p>type used to represent a collection of key-value pairs. Also known as a dictionary. Defined with curly braces {key: value} or by using the dict() constructor.</p>
+                    <p><span class="data-type">dict</span> - Type used to represent a collection of key-value pairs. Also known as a dictionary. Defined with curly braces {key: value} or by using the dict() constructor.</p>
                 </div>
             </div>
             <div class="wide-box content-box center-content">
                 <p>We will get a little more into these shortly, and see some examples of each of them. But first lets figure out how to set these data types. In Python data types are set when you assign values to variables, in example when you type this:</p>
-                <!-- Fix the formatting of the code and spacing of text-->
-                <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">x = 5</span></p>
+                <p class="code-input">x = 5</p>
                 <p>The data type of 'int' is automatically assigned by Python.</p>
                 <p>Now what about this?</p>
-                <p id="binary-breakdown" style="display: block;"><span style="background-color: black; color: white; padding: 15px;">x = "John"</span></p>
+                <p class="code-input">x = "John"</p>
                 <p>The data type of 'str' will be assigned in this case, since a str value was used.</p>
             </div>
         </section>
@@ -136,18 +131,14 @@
                 <h3>Syntax of Defining a Function:</h3>
                 <pre><code>def function_name(parameters):
                 Function body: Code block that performs the task
-                return [expression]
-        </code></pre>
-        
+                return [expression]</code>
+                </pre>
                 <h3>Parameters and Arguments:</h3>
                 <p>Parameters are placeholders in the function definition. Arguments are the actual values passed to the function when it is called.</p>
-        
                 <h3>Return Statement:</h3>
                 <p>The <code>return</code> statement is used to exit a function and return a value (if any) to the caller. If the <code>return</code> statement is not present, the function will return <code>None</code> by default.</p>
-        
                 <h3>Calling a Function:</h3>
                 <p>To call a function, simply use the function name followed by parentheses and any required arguments.</p>
-        
                 <h3>Example:</h3>
                 <pre><code>def add_numbers(a, b):
             """This function adds two numbers."""

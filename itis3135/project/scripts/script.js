@@ -63,13 +63,11 @@ function loadFooter() {
 /* Functions for index.html page */
 
 /* Functions for overview.html page */
-
 /* Functions for syntax.html page */
 
 /* Functions for basics.html page */
 
 /* Functions for advanced.html page */
-
 function validateInput() {
     var userInput = document.getElementById("userInput").value.trim();
     var expectedInput = 'print("Hello, World!")';
