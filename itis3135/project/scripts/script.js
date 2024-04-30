@@ -1,6 +1,3 @@
-const quizURL = 'components/questions.json';
-const testURL = 'components/questions.json';
-
 /* Functions for all pages */
 document.addEventListener('DOMContentLoaded', loadMenu);
 document.addEventListener('DOMContentLoaded', loadFooter);
@@ -59,13 +56,6 @@ function loadFooter() {
         })
         .catch(error => console.error('Error loading footer:', error));
 }
-
-/* Functions for index.html page */
-
-/* Functions for overview.html page */
-/* Functions for syntax.html page */
-
-/* Functions for basics.html page */
 
 /* Functions for advanced.html page */
 function validateInput() {
