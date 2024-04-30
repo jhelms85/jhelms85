@@ -159,6 +159,11 @@ h3 {
     color: #ffffff;
 }
 
+.syntax-top-div {
+    display: flex;
+    justify-content: center;
+}
+
 .code-container {
     display: flex;
     justify-content: center;
